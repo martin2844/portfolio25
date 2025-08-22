@@ -1,0 +1,77 @@
+extractedDate: "2024-08-22"
+sourceProject: "portfolio24"
+
+dataStructure:
+  blogPosts:
+    file: "blog-posts.json"
+    count: 5
+    description: "All blog posts extracted from src/app/blog/(posts)/*/page.mdx with metadata and clean markdown content"
+    structure:
+      slug: "URL-friendly identifier"
+      metadata:
+        title: "Post title"
+        publishDate: "ISO date string"
+        excerpt: "Brief description"
+        readingTime: "Estimated reading time in minutes"
+        tags: "Array of tags"
+        coverImage: "Optional cover image URL"
+      content: "Full markdown content without frontmatter"
+  
+  notes:
+    file: "notes.json"
+    count: 2
+    description: "All notes extracted from src/app/notes/(notes)/*/page.mdx with metadata and clean content"
+    structure:
+      slug: "URL-friendly identifier"
+      metadata:
+        title: "Note title"
+        publishDate: "Date string"
+        excerpt: "Brief description"
+        tags: "Array of tags"
+      content: "Full content without frontmatter"
+  
+  portfolio:
+    file: "portfolio.json"
+    count: 4
+    description: "Portfolio items extracted from src/components/pagesContent/Portfolio/PortfolioSection.tsx"
+    structure:
+      name: "Project name"
+      description: "Project description"
+      technologies: "Array of technology tags"
+      githubLink: "Optional GitHub repository URL"
+      websiteLink: "Optional live website URL"
+      image: "Project screenshot/image URL"
+  
+  cars:
+    file: "cars.json"
+    count: 7
+    description: "Car collection data extracted from src/app/cars/cars.ts"
+    structure:
+      make: "Car manufacturer"
+      model: "Car model and variant"
+      year: "Manufacturing year"
+      description: "Personal story and details"
+      images: "Array of image URLs"
+      ownedFrom: "Date when ownership started"
+      ownedTo: "Date when ownership ended or 'Present'"
+      location: "Geographic location during ownership"
+
+extractionNotes:
+  contentProcessing:
+    - "MDX frontmatter metadata extracted separately from content"
+    - "Export statements removed from content"
+    - "Image URLs preserved as-is from original content"
+    - "Code blocks and formatting maintained in markdown"
+    - "All original text content preserved without modification"
+  
+  imageHandling:
+    - "Some car images reference local /gol/ directory"
+    - "Other images use cloud.codigomate.com URLs"
+    - "Portfolio images use cloud.codigomate.com URLs"
+    - "Blog post images use cloud.codigomate.com URLs"
+  
+  dataIntegrity:
+    - "All original metadata fields preserved"
+    - "Consistent date formatting maintained where possible"
+    - "Technology arrays standardized to lowercase"
+    - "URL fields validated and preserved as-is"

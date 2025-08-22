@@ -1,0 +1,39 @@
+site:
+  name: "Martin's Portfolio"
+  description: "Personal portfolio, blog, notes, and car collection"
+  extractedFrom: "portfolio24"
+  extractedDate: "2024-08-22"
+
+data:
+  blogPosts: "./blog-posts.json"
+  notes: "./notes.json"
+  portfolio: "./portfolio.json"
+  cars: "./cars.json"
+
+counts:
+  blogPosts: 5
+  notes: 2
+  portfolioItems: 4
+  cars: 7
+
+tags:
+  blogTags: 
+    - "lucky"
+    - "hardware"
+    - "wordpress"
+    - "coolify"
+    - "docker"
+    - "self-hosting"
+    - "leetcode"
+    - "javascript"
+  noteTags:
+    - "ai"
+    - "note"
+    - "test"
+  technologies:
+    - "nextjs"
+    - "tailwindcss"
+    - "sqlite"
+    - "openai"
+    - "nodejs"
+    - "knex"

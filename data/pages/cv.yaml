@@ -1,0 +1,56 @@
+personalInfo:
+  name: "Martin Chammah"
+  title: "Software Engineer"
+  location: "Barcelona, Spain"
+  email: "martinchio@proton.me"
+  linkedin: "linkedin.com/in/martinchammah"
+  github: "github.com/martin2844"
+
+experience:
+  - company: "Datacamp"
+    position: "Software Engineer"
+    period: "2023 - Present"
+    location: "Remote"
+    description: "Working in the Ed Tech industry, contributing to educational technology solutions."
+  
+  - company: "Skipify"
+    position: "Software Engineer"
+    period: "2021 - 2023"
+    location: "Remote"
+    description: "Crafted many services on an innovative checkout startup in the US market."
+  
+  - company: "Elm Street Technology"
+    position: "Software Engineer"
+    period: "2020 - 2021"
+    location: "Remote"
+    description: "Worked for a leading CRM application in the US real estate market."
+  
+  - company: "Conexa (ARG)"
+    position: "Software Engineer"
+    period: "2018 - 2020"
+    location: "Buenos Aires, Argentina"
+    description: "Early career software engineering experience in Argentina."
+
+education:
+  - degree: "BA in Computer Science"
+    institution: "University of the People"
+    period: "2021 - 2025"
+    status: "In Progress"
+  
+  - degree: "BA, MA in Architecture"
+    institution: "University of Buenos Aires"
+    period: "2011 - 2018"
+    status: "Completed"
+
+skills:
+  programming: ["JavaScript", "TypeScript", "Go", "Ruby", "SQL"]
+  frameworks: ["Next.js", "React", "Node.js"]
+  databases: ["SQLite", "SQL"]
+  other: ["WordPress", "SEO", "API Development", "Web Apps"]
+
+services:
+  - "Custom API development"
+  - "WordPress plugins"
+  - "SEO optimization"
+  - "Static pages"
+  - "Web applications"
