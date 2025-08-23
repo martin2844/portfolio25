@@ -28,6 +28,10 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="<?= $canonicalUrl ?? 'https://martinchammah.dev' . $_SERVER['REQUEST_URI'] ?>">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/icon.ico">
+    <link rel="shortcut icon" href="/public/icon.ico">
+    
     <!-- Schema.org JSON-LD -->
     <?php if (isset($jsonLd)): ?>
     <script type="application/ld+json"><?= json_encode($jsonLd) ?></script>

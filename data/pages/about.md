@@ -6,8 +6,8 @@ email: "martinchio@proton.me"
 linkedin: "linkedin.com/in/martinchammah"
 github: "github.com/martin2844"
 motto: "Code, Create, Innovate"
-skills: ["JavaScript", "TypeScript", "Next.js", "React", "Node.js", "Go", "SQL", "Ruby"]
-interests: ["AI", "Machine Learning", "Automotive Technology"]
+skills: ["TypeScript", "Next.js", "Go", "SQL"]
+interests: ["AI tools", "Cars", "Software"]
 ---
 
 # About Martin

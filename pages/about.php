@@ -26,7 +26,7 @@ ob_start();
             <?php
             $skills = explode(',', $about['frontmatter']['skills'] ?? '');
             foreach ($skills as $skill): ?>
-                <span class="tag"><?= trim($skill) ?></span>
+                <span class="tag"><?= trim($skill, '" "') ?></span>
             <?php endforeach; ?>
         </div>
     </div>
@@ -37,7 +37,7 @@ ob_start();
             <?php
             $interests = explode(',', $about['frontmatter']['interests'] ?? '');
             foreach ($interests as $interest): ?>
-                <span class="tag"><?= trim($interest) ?></span>
+                <span class="tag"><?= trim($interest, '" "') ?></span>
             <?php endforeach; ?>
         </div>
     </div>

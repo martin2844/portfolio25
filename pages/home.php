@@ -80,12 +80,12 @@ ob_start();
     <div class="card">
         <h4><?= $about['frontmatter']['name'] ?></h4>
         <div class="meta"><?= $about['frontmatter']['title'] ?> • <?= $about['frontmatter']['location'] ?></div>
-        <div class="content"><?= excerpt(strip_tags($about['content']), 200) ?>...</div>
+        <div class="content"><?= excerpt(strip_tags($about['content']), 200) ?> <a href="/about">read more...</a></div>
         <div class="tags">
             <?php
             $skills = explode(',', $about['frontmatter']['skills'] ?? '');
             foreach (array_slice($skills, 0, 4) as $skill): ?>
-                <span class="tag"><?= trim($skill) ?></span>
+                <span class="tag"><?= trim($skill, '" "') ?></span>
             <?php endforeach; ?>
         </div>
     </div>

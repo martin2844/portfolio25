@@ -4,40 +4,96 @@ require_once __DIR__ . '/../includes/functions.php';
 $currentPage = 'cv';
 $pageTitle = 'CV';
 
-// Parse CV YAML manually for speed
+// Custom YAML parser for complex CV structure
 $cv = [];
-$lines = file(__DIR__ . '/../data/pages/cv.yaml');
+$content = file_get_contents(__DIR__ . '/../data/pages/cv.yaml');
+$lines = explode("\n", $content);
 $currentSection = null;
 $currentItem = null;
+$indentLevel = 0;
 
-foreach ($lines as $line) {
-    $line = trim($line);
-    if (empty($line) || $line[0] === '#') continue;
+for ($i = 0; $i < count($lines); $i++) {
+    $line = $lines[$i];
+    $trimmed = trim($line);
     
-    if (strpos($line, ':') !== false && !strpos($line, '- ')) {
-        $kv = explode(':', $line, 2);
+    if (empty($trimmed) || $trimmed[0] === '#') continue;
+    
+    // Count indentation
+    $currentIndent = strlen($line) - strlen(ltrim($line));
+    
+    if (strpos($trimmed, ':') !== false) {
+        $kv = explode(':', $trimmed, 2);
         $key = trim($kv[0]);
-        $value = trim($kv[1], ' "');
+        $value = trim($kv[1], ' "\'');
         
-        if (in_array($key, ['personalInfo', 'experience', 'education', 'skills', 'services'])) {
+        // Main sections
+        if ($currentIndent === 0) {
             $currentSection = $key;
             $cv[$currentSection] = [];
-        } else {
-            if ($currentSection && $currentItem !== null) {
-                $cv[$currentSection][$currentItem][$key] = $value;
+            $currentItem = null;
+        }
+        // Properties of array items
+        elseif ($currentIndent === 4 && $currentItem !== null) {
+            $cv[$currentSection][$currentItem][$key] = $value;
+        }
+        // Handle "- key: value" format 
+        elseif ($currentIndent === 2 && $trimmed[0] === '-') {
+            if (in_array($currentSection, ['experience', 'education'])) {
+                $currentItem = count($cv[$currentSection]);
+                $cv[$currentSection][$currentItem] = [];
+                
+                // Extract key:value from "- key: value"
+                $afterDash = trim(substr($trimmed, 1));
+                if (strpos($afterDash, ':') !== false) {
+                    $kv = explode(':', $afterDash, 2);
+                    $key = trim($kv[0]);
+                    $val = trim($kv[1], ' "\'');
+                    $cv[$currentSection][$currentItem][$key] = $val;
+                }
+            }
+        }
+        // Skills categories or personalInfo
+        elseif ($currentIndent === 2) {
+            if ($currentSection === 'skills') {
+                // Parse inline array for skills
+                if (!empty($value) && strpos($value, '[') !== false) {
+                    $arrayContent = trim($value, '[]');
+                    $skills = array_map(function($item) {
+                        return trim($item, ' "\'');
+                    }, explode(',', $arrayContent));
+                    $cv[$currentSection][$key] = $skills;
+                }
             } elseif ($currentSection === 'personalInfo') {
                 $cv[$currentSection][$key] = $value;
             }
         }
-    } elseif (strpos($line, '- ') === 0) {
-        if ($currentSection === 'services') {
-            $cv[$currentSection][] = trim(substr($line, 2), ' "');
-        } else {
-            $currentItem = count($cv[$currentSection] ?? []);
-            $cv[$currentSection][$currentItem] = [];
+    }
+    // Handle array items
+    elseif ($trimmed[0] === '-') {
+        $value = trim(substr($trimmed, 1), ' "\'');
+        
+        if ($currentIndent === 2) {
+            if (in_array($currentSection, ['experience', 'education'])) {
+                $currentItem = count($cv[$currentSection]);
+                $cv[$currentSection][$currentItem] = [];
+                
+                // Check if this line also has a key:value after the dash
+                if (strpos($value, ':') !== false) {
+                    $kv = explode(':', $value, 2);
+                    $key = trim($kv[0]);
+                    $val = trim($kv[1], ' "\'');
+                    $cv[$currentSection][$currentItem][$key] = $val;
+                }
+            } else {
+                // Simple arrays like services
+                $cv[$currentSection][] = $value;
+            }
         }
     }
 }
+
+// Debug: uncomment to see parsed data
+// echo '<pre>CV parsed data:'; var_dump($cv); echo '</pre>'; exit;
 
 ob_start();
 ?>
@@ -74,40 +130,20 @@ ob_start();
     <div class="cv-section">
         <h3>Skills & Technologies</h3>
         <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Programming</h4>
-                <div class="tags">
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">TypeScript</span>
-                    <span class="tag">Go</span>
-                    <span class="tag">Ruby</span>
-                    <span class="tag">SQL</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h4>Frameworks</h4>
-                <div class="tags">
-                    <span class="tag">Next.js</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Node.js</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h4>Databases</h4>
-                <div class="tags">
-                    <span class="tag">SQLite</span>
-                    <span class="tag">SQL</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h4>Other</h4>
-                <div class="tags">
-                    <span class="tag">WordPress</span>
-                    <span class="tag">SEO</span>
-                    <span class="tag">API Development</span>
-                    <span class="tag">Web Apps</span>
-                </div>
-            </div>
+            <?php if (isset($cv['skills'])): ?>
+                <?php foreach ($cv['skills'] as $category => $skills): ?>
+                    <div class="skill-category">
+                        <h4><?= ucfirst($category) ?></h4>
+                        <div class="tags">
+                            <?php if (is_array($skills)): ?>
+                                <?php foreach ($skills as $skill): ?>
+                                    <span class="tag"><?= htmlspecialchars($skill) ?></span>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </div>
     

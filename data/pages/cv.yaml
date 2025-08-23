@@ -11,25 +11,25 @@ experience:
     position: "Software Engineer"
     period: "2023 - Present"
     location: "Remote"
-    description: "Working in the Ed Tech industry, contributing to educational technology solutions."
+    description: "Working on the team responsible for creating automated and human translation solutions across the entire platform, utilizing various AI tools and working through multiple services. I also contribute solutions to various other teams, acting as a versatile jack-of-all-trades who facilitates workflows across the organization. I work with diverse technologies including Node.js (Koa, NestJS), Java, Ruby, and React, adapting to whatever stack is needed to solve problems effectively."
   
   - company: "Skipify"
     position: "Software Engineer"
-    period: "2021 - 2023"
+    period: "Mar 2022 - Oct 2023"
     location: "Remote"
-    description: "Crafted many services on an innovative checkout startup in the US market."
+    description: "Worked in several key areas of the skipify payments app including both the Next.js front end and several of the Go backend services. I also led, designed and developed the main service for CCPA compliance."
   
   - company: "Elm Street Technology"
-    position: "Software Engineer"
-    period: "2020 - 2021"
-    location: "Remote"
-    description: "Worked for a leading CRM application in the US real estate market."
+    position: "Full Stack Developer"
+    period: "Mar 2021 - Mar 2023"
+    location: "Texas, USA · Remote"
+    description: "Worked at a leading Real Estate app mainly focused on backend engineering, including Node.js with Flow, NestJS and TypeScript. My work also included maintaining and updating the front facing SSR React.js app."
   
-  - company: "Conexa (ARG)"
-    position: "Software Engineer"
-    period: "2018 - 2020"
-    location: "Buenos Aires, Argentina"
-    description: "Early career software engineering experience in Argentina."
+  - company: "Conexa"
+    position: "Full Stack Developer"
+    period: "Jul 2018 - Mar 2021"
+    location: "Gran Buenos Aires, Argentina"
+    description: "Worked with tech stacks including Node.js, TypeScript, Java, PHP, React, Gatsby, Next.js, Ubuntu NGINX. Built many custom WordPress and WooCommerce integrations, and custom integrations for ecommerce platforms like Tiendanube-HOP, Tiendanube-PedidosYa, Tiendanube-Andreani, Tiendanube-Rappi, Vtex-Andreani, Vtex-PedidosYa."
 
 education:
   - degree: "BA in Computer Science"
@@ -43,14 +43,14 @@ education:
     status: "Completed"
 
 skills:
-  programming: ["JavaScript", "TypeScript", "Go", "Ruby", "SQL"]
-  frameworks: ["Next.js", "React", "Node.js"]
-  databases: ["SQLite", "SQL"]
-  other: ["WordPress", "SEO", "API Development", "Web Apps"]
+  programming: [JavaScript, TypeScript, Go, Ruby, SQL]
+  frameworks: [Next.js, React, Node.js]
+  databases: [SQLite, SQL]
+  other: [WordPress, SEO, API Development, Web Apps]
 
 services:
-  - "Custom API development"
-  - "WordPress plugins"
-  - "SEO optimization"
-  - "Static pages"
-  - "Web applications"
+  - Custom API development
+  - WordPress plugins
+  - SEO optimization
+  - Static pages
+  - Web applications
