@@ -18,7 +18,7 @@ $jsonLd = [
     'jobTitle' => 'Software Engineer',
     'url' => 'https://martinchammah.dev',
     'sameAs' => [
-        'https://linkedin.com/in/martinchammah',
+        'https://linkedin.com/in/chammah',
         'https://github.com/martin2844'
     ],
     'address' => [

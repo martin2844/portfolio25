@@ -3,7 +3,7 @@ name: "Martin Chammah"
 title: "Software Engineer"
 location: "Barcelona, Spain"
 email: "martinchio@proton.me"
-linkedin: "linkedin.com/in/martinchammah"
+linkedin: "linkedin.com/in/chammah"
 github: "github.com/martin2844"
 motto: "Code, Create, Innovate"
 skills: ["TypeScript", "Next.js", "Go", "SQL"]
