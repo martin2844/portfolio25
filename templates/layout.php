@@ -28,6 +28,7 @@
     <link rel="canonical" href="<?= e($canonicalUrl ?? 'https://martinchammah.dev' . $_SERVER['REQUEST_URI']) ?>">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/public/icon.svg">
     <link rel="icon" type="image/x-icon" href="/public/icon.ico">
     <link rel="shortcut icon" href="/public/icon.ico">
 

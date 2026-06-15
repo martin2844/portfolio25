@@ -29,7 +29,7 @@ ob_start();
 
 <section class="about-page">
     <article class="article-page">
-        <header>
+        <header class="mt-4">
             <h1>About</h1>
         </header>
         

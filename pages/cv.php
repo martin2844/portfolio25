@@ -13,7 +13,7 @@ ob_start();
 ?>
 
 <section class="cv-page">
-    <header class="cv-header">
+    <header class="cv-header mt-4">
         <h1><?= htmlspecialchars($personal['name'] ?? 'Martin Chammah') ?></h1>
         <div class="meta"><?= htmlspecialchars($personal['title'] ?? 'Software Engineer') ?> • <?= htmlspecialchars($personal['location'] ?? 'Barcelona, Spain') ?></div>
     </header>
