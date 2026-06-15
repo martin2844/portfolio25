@@ -8,7 +8,7 @@
     <meta name="author" content="Martin Chammah">
     <meta name="robots" content="<?= !empty($noindex) ? 'noindex, follow' : 'index, follow' ?>">
     <meta name="language" content="English">
-    <meta name="theme-color" content="#0d1117">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="<?= e($ogType ?? 'website') ?>">
@@ -35,6 +35,7 @@
     <?php if (isset($jsonLd)): ?>
     <script type="application/ld+json"><?= json_encode($jsonLd, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
     <?php endif; ?>
+    <link rel="stylesheet" href="/public/fonts/fonts.css">
     <link rel="stylesheet" href="/public/styles.css">
 </head>
 <body>

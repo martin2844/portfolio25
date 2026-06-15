@@ -39,12 +39,12 @@ ob_start();
     <p class="lead">TypeScript, Next.js, SQL, Go. Based in Barcelona. I like shipping useful things and bending simple tools in interesting ways.</p>
 </section>
 
-<section class="home-stats">
-    <?= render_stat_card(['number' => count($posts), 'label' => 'blog posts']) ?>
-    <?= render_stat_card(['number' => count($portfolio), 'label' => 'projects']) ?>
-    <?= render_stat_card(['number' => count($notes), 'label' => 'notes']) ?>
-    <?= render_stat_card(['number' => '5+', 'label' => 'years remote']) ?>
-</section>
+<p class="hero-meta">
+    <strong><?= count($posts) ?></strong> posts ·
+    <strong><?= count($portfolio) ?></strong> projects ·
+    <strong><?= count($notes) ?></strong> notes ·
+    <strong>5+</strong> years remote
+</p>
 
 <?php if ($featuredProject): ?>
 <section>
