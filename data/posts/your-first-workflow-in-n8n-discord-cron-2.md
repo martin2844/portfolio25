@@ -78,9 +78,9 @@ When you don't want to rely on Cron, you use a Webhook node at startup. n8n give
 ## Download the video workflows
 
 * Downtime Detector: checks a URL and notifies Discord if it goes down  
-  <https://codigomate.com/wp-content/uploads/2025/11/Downtime-Detector.json>
+  [Downtime-Detector.json](/public/posts/Downtime-Detector.json)
 * Useless facts: brings a random piece of information and publishes it on Discord with a Cron  
-  <https://codigomate.com/wp-content/uploads/2025/11/Useless-facts.json>
+  [Useless-facts.json](/public/posts/Useless-facts.json)
 
 Import them into n8n and change the minimum: your Discord Webhook, the URL to monitor, and the Cron frequency.
 

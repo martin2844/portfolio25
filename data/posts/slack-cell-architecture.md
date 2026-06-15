@@ -43,7 +43,7 @@ Instead of immediately trying to fix these gray faults, which can be difficult t
 
 Silo refers to the graphic form given to the cell, each AZ is a cell, and each cell contains all the services, with which it can redirect traffic from cells that do not work to others that do, and little by little the one that does not work is “turned off”. All communications between services are within each cell, there is no communication between AZs which allows this operation.
 
-![Silos](https://codigomate.com/wp-content/uploads/2023/08/image3.webp "Silos")  
+![Silos](/public/posts/image3.webp "Silos")  
 (Bethea, 2023)
 
 ### Implementation

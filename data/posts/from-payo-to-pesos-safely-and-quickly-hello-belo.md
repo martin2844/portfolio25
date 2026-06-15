@@ -28,25 +28,25 @@ The last option and for me the best. **Belo** integration with Payoneer. We can 
 First, we clearly need an account in BELO, and an account in PAYONEER!
 
 1. We log in to Belo and we will receive  
-   ![belo home](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144014_belo.jpg)
+   ![belo home](/public/posts/Screenshot_20230703_144014_belo.jpg)
 2. We choose money from abroad  
-   ![money](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144021_belo.jpg)
+   ![money](/public/posts/Screenshot_20230703_144021_belo.jpg)
 3. We choose Payoneer  
-   ![payo](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144031_belo.jpg)
+   ![payo](/public/posts/Screenshot_20230703_144031_belo.jpg)
 4. We give the OK  
-   ![We click ok](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144039_belo.jpg)
+   ![We click ok](/public/posts/Screenshot_20230703_144039_belo.jpg)
 5. The Payoneer login opens, we log in  
-   ![login payo](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144056_Chrome.jpg)
+   ![login payo](/public/posts/Screenshot_20230703_144056_Chrome.jpg)
 6. We confirm the login with 2FA  
-   ![2fa](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144121_Payoneer.jpg)
+   ![2fa](/public/posts/Screenshot_20230703_144121_Payoneer.jpg)
 7. We allow access:  
-   ![access](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144129_Chrome.jpg)
+   ![access](/public/posts/Screenshot_20230703_144129_Chrome.jpg)
 8. We should see the successful connection:  
-   ![success](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144135_Chrome.jpg)
+   ![success](/public/posts/Screenshot_20230703_144135_Chrome.jpg)
 9. We will be able to see our PAYO balance from Belo  
-   ![balance](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144142_belo.jpg)
+   ![balance](/public/posts/Screenshot_20230703_144142_belo.jpg)
 10. We click on what we want to withdraw and click "withdraw" and that's it!  
-    ![Ready](https://codigomate.com/wp-content/uploads/2023/07/Screenshot_20230703_144300_belo.jpg)
+    ![Ready](/public/posts/Screenshot_20230703_144300_belo.jpg)
 
 It's that easy, in just a few steps we link the account, and it is connected. The commission is fixed, and it is very fast, the accreditation is instantaneous, which is why when we transfer crypto we must wait for the Network.
 

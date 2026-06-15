@@ -1,0 +1,1073 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -96,
+        32
+      ],
+      "id": "edc65cf2-7990-4c7c-8e5e-00cf70d503df",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://www.argenprop.com/listing/getmarkers",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "vista-mapa"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-ES,en;q=0.9,es-US;q=0.8,es;q=0.7,en-GB;q=0.6,en-US;q=0.5"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "newrelic",
+              "value": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjI4NjAzMjEiLCJhcCI6IjE4MzQ3NzczNzAiLCJpZCI6IjQ4NjdlYWVmYjdkZGVkNGMiLCJ0ciI6IjBiMzU3ZWQxYTJhNzQ4YmNjZGRiNDVmMWFmMzQ5M2JlIiwidGkiOjE3NjM0MDM4MjExNzcsInRrIjoiMjM0OTg4MiJ9fQ=="
+            },
+            {
+              "name": "origin",
+              "value": "https://www.argenprop.com"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "priority",
+              "value": "u=1, i"
+            },
+            {
+              "name": "referer",
+              "value": "https://www.argenprop.com/inmuebles/alquiler/pesos-100000-300000?vista-mapa"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "traceparent",
+              "value": "00-0b357ed1a2a748bccddb45f1af3493be-4867eaefb7dded4c-01"
+            },
+            {
+              "name": "tracestate",
+              "value": "2349882@nr=0-1-2860321-1834777370-4867eaefb7dded4c----1763403821177"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "cookie",
+              "value": "_gcl_au=1.1.224584117.1763301870;_ga=GA1.1.33099471.1763301870;__rtbh.uid=%7B%22eventType%22%3A%22uid%22%2C%22id%22%3A%22unknown%22%2C%22expiryDate%22%3A%222026-11-17T18%3A22%3A41.225Z%22%7D;__rtbh.lid=%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%22e0D5MEGEREmTHWroymHP%22%2C%22expiryDate%22%3A%222026-11-17T18%3A23%3A28.238Z%22%7D;_ga_X0E5QSKP69=GS2.1.s1763403761$o4$g1$t1763403809$j12$l0$h0;cto_bundle=B59AQl9iV1FuckZsMjlKTU55UmpDN2NqJTJCT0o2bnNsZlU1SGh3cXNST3V0blZxSzFXS0pSS2FnV09PdTNJM1FqN3pPTjJ5SHREdSUyQiUyRjZnY3IlMkZ1Z1hRWWJ1TjYwRklWRTdqWmp3SVNZeEw0biUyRm5wR25yQndRU29UMGFhNmJsaXh0T2VDS2I4JTJCaXJVSWJkeWpXaGFFU2d3cXBCJTJGYkdvODJyc24wQ3ZyOVF1YzBzTVlSVSUzRA;g_state={\"i_l\":0,\"i_ll\":1763403811155,\"i_b\":\"F/tN0QOGs8W7afkSgG+F8p0dNaEa1uUZHXUs45rsx6Q\"};area=LatLng(-34.5883%2C-58.5124)%2CLatLng(-34.5883%2C-58.5043)%2CLatLng(-34.5883%2C-58.4962)%2CLatLng(-34.5976%2C-58.4962)%2CLatLng(-34.5976%2C-58.5043)%2CLatLng(-34.5976%2C-58.5124);"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "area",
+              "value": "LatLng(-34.5790,-58.5515),LatLng(-34.5790,-58.5192),LatLng(-34.5790,-58.4869),LatLng(-34.6164,-58.4869),LatLng(-34.6164,-58.5192),LatLng(-34.6164,-58.5515)"
+            },
+            {
+              "name": "url",
+              "value": "/inmuebles/alquiler/pesos-100000-300000?area=1763403794159"
+            },
+            {
+              "name": "isCustomArea",
+              "value": "true"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        112,
+        32
+      ],
+      "id": "0d20c89c-769b-4b4c-bd82-d234009c4f66",
+      "name": "Get Properties"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "items",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        320,
+        32
+      ],
+      "id": "32ba6c07-082b-4d0c-8e26-860222c204c5",
+      "name": "Split Out Original Array"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        528,
+        32
+      ],
+      "id": "70aaaf4b-b3f1-4186-9d8f-6ef1a52fc9b7",
+      "name": "Loop Over Properties",
+      "executeOnce": false
+    },
+    {
+      "parameters": {
+        "url": "=https://www.argenprop.com/listing/getmapcard/{{ $json.id }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            },
+            {
+              "name": "accept-language",
+              "value": "en-ES,en;q=0.9,es-US;q=0.8,es;q=0.7,en-GB;q=0.6,en-US;q=0.5"
+            },
+            {
+              "name": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "name": "newrelic",
+              "value": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjI4NjAzMjEiLCJhcCI6IjE4MzQ3NzczNzAiLCJpZCI6ImRkMGMwYTE3ZDYyNmEyZjciLCJ0ciI6ImU0NzRiY2UyOTYzMGRjZWEwNWNhNTFhODAxZWRlNGQzIiwidGkiOjE3NjMzMTE1MjkwNDAsInRrIjoiMjM0OTg4MiJ9fQ=="
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "priority",
+              "value": "u=1, i"
+            },
+            {
+              "name": "referer",
+              "value": "https://www.argenprop.com/departamentos/alquiler/villa-pueyrredon/dolares-100-700?vista-mapa"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "traceparent",
+              "value": "00-e474bce29630dcea05ca51a801ede4d3-dd0c0a17d626a2f7-01"
+            },
+            {
+              "name": "tracestate",
+              "value": "2349882@nr=0-1-2860321-1834777370-dd0c0a17d626a2f7----1763311529040"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "cookie",
+              "value": "_gcl_au=1.1.224584117.1763301870;_ga=GA1.1.33099471.1763301870;__rtbh.uid=%7B%22eventType%22%3A%22uid%22%2C%22id%22%3A%22unknown%22%2C%22expiryDate%22%3A%222026-11-16T16%3A39%3A24.382Z%22%7D;__rtbh.lid=%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%22e0D5MEGEREmTHWroymHP%22%2C%22expiryDate%22%3A%222026-11-16T16%3A43%3A01.394Z%22%7D;_ga_X0E5QSKP69=GS2.1.s1763310574$o2$g1$t1763311382$j38$l0$h0;cto_bundle=RHdhF19iV1FuckZsMjlKTU55UmpDN2NqJTJCT0tvemVnV2c5Zm1Xd1dSMiUyQmlhNUp4Wnp0R1YxUjRHbnhtQ2E3TGJkU1NtOVpxZVVqeVkwYWRrVzdiNUIyb0F0NHVLYXZhd0JUdEt2bXhleWxwblpodjRTJTJGVXZUTzJkVHN5bThpMkV2UEZQcnQxcm5wWWJrdTBRM28yMjVlWnJQZ2JzOSUyQmRLcERnMnpNVVVlTzNCanIzMCUzRA;g_state={\"i_l\":0,\"i_ll\":1763311383709,\"i_b\":\"MgY6QV7LKtfoasyS3/p3/zcOBtmypTCRiey4d9lPXls\"};"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1216,
+        48
+      ],
+      "id": "a5952f80-c715-4315-925d-2bd8fe8685d6",
+      "name": "Get Property Data"
+    },
+    {
+      "parameters": {
+        "amount": 0.5
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        800,
+        48
+      ],
+      "id": "1327ba79-d7c7-4a7d-90ca-d217b135ee8f",
+      "name": "Wait",
+      "webhookId": "5e980541-db79-4862-af30-757da07a35e7"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Function node en n8n\n\nfunction decode(str) {\n\tif (!str) return str;\n\t// Decodifica entidades HTML comunes (acentos, ñ, etc.)\n\treturn str\n\t\t.replace(/&#x([0-9A-Fa-f]+);/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)))\n\t\t.replace(/&#(\\d+);/g, (_, dec) => String.fromCharCode(parseInt(dec, 10)))\n\t\t.replace(/&quot;/g, '\"')\n\t\t.replace(/&amp;/g, '&')\n\t\t.replace(/&nbsp;/g, ' ')\n\t\t.replace(/&aacute;/g, 'á')\n\t\t.replace(/&eacute;/g, 'é')\n\t\t.replace(/&iacute;/g, 'í')\n\t\t.replace(/&oacute;/g, 'ó')\n\t\t.replace(/&uacute;/g, 'ú')\n\t\t.replace(/&ntilde;/g, 'ñ');\n}\n\nreturn items.map(item => {\n\tconst html = (item.json.data || '').toString();\n\n\t// Precio + moneda\n\tlet priceSymbol = null;\n\tlet priceValue = null;\n\n\tconst moneySymbolMatch = html.match(/<span[^>]*class=\"money-symbol\"[^>]*>\\s*([^<]+)/);\n\tif (moneySymbolMatch) priceSymbol = moneySymbolMatch[1].trim();\n\n\tconst priceValueMatch = html.match(/<span[^>]*class=\"price-value\"[^>]*>\\s*([\\d\\.,]+)/);\n\tif (priceValueMatch) priceValue = priceValueMatch[1].trim();\n\n\t// Imagen (primer data-src)\n\tconst imgMatch = html.match(/<img[^>]+data-src=\"([^\"]+)\"[^>]*>/);\n\tconst imagen = imgMatch ? imgMatch[1].trim() : null;\n\n\t// Dirección\n\tconst dirMatch = html.match(/<h2[^>]*class=\"detail-address\"[^>]*>\\s*([^<]+)\\s*<\\/h2>/);\n\tconst direccion = dirMatch ? decode(dirMatch[1].trim()) : null;\n\n\t// Dormitorio\n\tconst dormMatch = html.match(/cantidad_dormitorios[\\s\\S]*?<span[^>]*>\\s*([^<]+?)\\s*<\\/span>/);\n\tconst dormitorio = dormMatch ? decode(dormMatch[1].trim()) : null;\n\n\t// Baño\n\tconst banioMatch = html.match(/cantidad_banos[\\s\\S]*?<span[^>]*>\\s*([^<]+?)\\s*<\\/span>/);\n\tconst banio = banioMatch ? decode(banioMatch[1].trim()) : null;\n\n\t// URL\n\tconst urlMatch = html.match(/<a[^>]+class=\"map-card[^\"]*\"[^>]*href=\"([^\"]+)\"/);\n\tlet url = urlMatch ? urlMatch[1].trim() : null;\n\tif (url && url.startsWith('/')) url = 'https://www.argenprop.com' + url;\n\n  \t// ID de publicación (varias fuentes posibles)\n\tlet id = null;\n\n\tconst idMatchVisited = html.match(/data-visited=\"(\\d+)\"/);\n\tconst idMatchFav = html.match(/data-favourite=\"(\\d+)\"/);\n\tconst idMatchHref = url ? url.match(/--(\\d+)$/) : null;\n\n\tif (idMatchVisited) id = idMatchVisited[1];\n\telse if (idMatchFav) id = idMatchFav[1];\n\telse if (idMatchHref) id = idMatchHref[1];\n\n\titem.json = {\n\t\tprice: priceValue,\n\t\tcurrency: priceSymbol || null,\n\t\timage: imagen,\n\t\taddress: direccion,\n\t\trooms: dormitorio,\n\t\tbaths: banio,\n\t\turl,\n        site_id: id\n        \n\t};\n\n\treturn item;\n});\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        672,
+        -128
+      ],
+      "id": "0fb833c5-c0fb-4939-b1f5-db31b4850dc3",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "amNKXqexRB3fHjtO",
+          "mode": "list",
+          "cachedResultName": "properties",
+          "cachedResultUrl": "/projects/jlSzYHfzbLbDGI8l/datatables/amNKXqexRB3fHjtO"
+        },
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "site_id",
+              "keyValue": "={{ $json.site_id }}"
+            }
+          ]
+        },
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        896,
+        -320
+      ],
+      "id": "af022278-65a0-4bb5-aa51-935de1fb6866",
+      "name": "Get row(s)",
+      "alwaysOutputData": false,
+      "retryOnFail": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ff855d58-5b93-482e-bc6e-75893b60e88d",
+              "leftValue": "={{ $json.id}}",
+              "rightValue": "",
+              "operator": {
+                "type": "number",
+                "operation": "notExists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1376,
+        -128
+      ],
+      "id": "c0b64993-069e-413d-bf77-7a4f3120a606",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "value": "amNKXqexRB3fHjtO",
+          "mode": "list",
+          "cachedResultName": "properties",
+          "cachedResultUrl": "/projects/jlSzYHfzbLbDGI8l/datatables/amNKXqexRB3fHjtO"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "site_id": "={{ $('Code in JavaScript').item.json.site_id }}",
+            "price": "={{ $('Code in JavaScript').item.json.price }}",
+            "currency": "={{ $('Code in JavaScript').item.json.currency }}",
+            "address": "={{ $('Code in JavaScript').item.json.address }}",
+            "image": "={{ $('Code in JavaScript').item.json.image }}",
+            "url": "={{ $('Code in JavaScript').item.json.url }}",
+            "rooms": "={{ $('Code in JavaScript').item.json.rooms }}",
+            "baths": "={{ $('Code in JavaScript').item.json.baths }}",
+            "last_checked": "={{ new Date() }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "site_id",
+              "displayName": "site_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "price",
+              "displayName": "price",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "url",
+              "displayName": "url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "currency",
+              "displayName": "currency",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "address",
+              "displayName": "address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "image",
+              "displayName": "image",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "rooms",
+              "displayName": "rooms",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "baths",
+              "displayName": "baths",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "last_checked",
+              "displayName": "last_checked",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        1712,
+        -256
+      ],
+      "id": "c16c65f6-dd26-4516-a76d-abb8a43b8709",
+      "name": "Insert row"
+    },
+    {
+      "parameters": {
+        "amount": 1
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1888,
+        -256
+      ],
+      "id": "412c8269-2864-480b-b699-2ee71b25ac82",
+      "name": "Wait1",
+      "webhookId": "bd479670-38c7-428c-90f2-b24d9ffdb0d8"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=:green_circle: Nueva Propiedad Detectada\n{{ $json.address }}\n{{ $json.currency }}{{ $json.price }}\n{{ $json.rooms }}\n\n{{ $json.url }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        2080,
+        -256
+      ],
+      "id": "66bc5f5c-2a2e-40d7-b47e-388eac1c4f21",
+      "name": "Discord",
+      "webhookId": "29d477e8-0f27-4e27-8bff-9ed581b42e61",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "p7BARAvDvD8gMjOg",
+          "name": "Discord Webhook account 6"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ab2b8c6d-5e2e-4453-89f5-15b33033225e",
+              "leftValue": "={{ $('Get row(s)').item.json.price }}",
+              "rightValue": "={{ $('Code in JavaScript').item.json.price }}",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1712,
+        -48
+      ],
+      "id": "15c912e0-a6d8-44b8-838e-e5ed4f8e9453",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "dataTableId": {
+          "__rl": true,
+          "value": "amNKXqexRB3fHjtO",
+          "mode": "list",
+          "cachedResultName": "properties",
+          "cachedResultUrl": "/projects/jlSzYHfzbLbDGI8l/datatables/amNKXqexRB3fHjtO"
+        },
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "site_id",
+              "keyValue": "={{ $json.site_id }}"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "site_id": "={{ $json.site_id }}",
+            "price": "={{ $json.price }}",
+            "currency": "={{ $json.currency }}",
+            "url": "={{ $json.url }}",
+            "address": "={{ $json.address }}",
+            "image": "={{ $json.image }}",
+            "rooms": "={{ $json.rooms }}",
+            "baths": "={{ $json.baths }}",
+            "last_checked": "={{ new Date() }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "site_id",
+              "displayName": "site_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "price",
+              "displayName": "price",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "url",
+              "displayName": "url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "currency",
+              "displayName": "currency",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "address",
+              "displayName": "address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "image",
+              "displayName": "image",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "rooms",
+              "displayName": "rooms",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "baths",
+              "displayName": "baths",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "last_checked",
+              "displayName": "last_checked",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        1888,
+        112
+      ],
+      "id": "581a3b86-886d-469a-8499-7a4164871427",
+      "name": "Update row(s)"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "dataTableId": {
+          "__rl": true,
+          "value": "amNKXqexRB3fHjtO",
+          "mode": "list",
+          "cachedResultName": "properties",
+          "cachedResultUrl": "/projects/jlSzYHfzbLbDGI8l/datatables/amNKXqexRB3fHjtO"
+        },
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "site_id",
+              "keyValue": "={{ $json.site_id }}"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "site_id": "={{ $json.site_id }}",
+            "price": "={{ $('Code in JavaScript').item.json.price }}",
+            "currency": "={{ $json.currency }}",
+            "url": "={{ $('Code in JavaScript').item.json.url }}",
+            "address": "={{ $json.address }}",
+            "image": "={{ $json.image }}",
+            "rooms": "={{ $json.rooms }}",
+            "baths": "={{ $json.baths }}",
+            "last_checked": "={{ new Date() }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "site_id",
+              "displayName": "site_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "price",
+              "displayName": "price",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "url",
+              "displayName": "url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "currency",
+              "displayName": "currency",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "address",
+              "displayName": "address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "image",
+              "displayName": "image",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "rooms",
+              "displayName": "rooms",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "baths",
+              "displayName": "baths",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "last_checked",
+              "displayName": "last_checked",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        1888,
+        -64
+      ],
+      "id": "0e9f7287-6c5f-4789-86b6-705bd1d39e8a",
+      "name": "Update row(s)1"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=:blue_circle: Alerta! Nuevo precio!\n{{ $('Get row(s)').item.json.address }} cambio su precio:\n\nAntes: {{ $('Get row(s)').item.json.price }}\nAhora: {{ $('Code in JavaScript').item.json.price }}\n\n{{ $json.url }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        2288,
+        -64
+      ],
+      "id": "3474e525-2283-4a1b-b482-74fc20826517",
+      "name": "Discord1",
+      "webhookId": "32b71d34-bf9f-4f3c-8e0c-e30aea8aa1c9",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "p7BARAvDvD8gMjOg",
+          "name": "Discord Webhook account 6"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 1
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2096,
+        -64
+      ],
+      "id": "1e317fbc-66c2-4144-bc0c-8e57812127ed",
+      "name": "Wait2",
+      "webhookId": "f247cf5a-d5f7-49db-b19d-8322ed0b4373"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "fieldsToMatchString": "site_id",
+        "joinMode": "keepEverything",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1104,
+        -128
+      ],
+      "id": "8e5db4aa-cb9a-43f2-84db-e14528d26ee5",
+      "name": "Merge",
+      "alwaysOutputData": true
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get Properties",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Properties": {
+      "main": [
+        [
+          {
+            "node": "Split Out Original Array",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out Original Array": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Properties",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Properties": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Property Data": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Properties",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Get Property Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Get row(s)": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Insert row",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert row": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Update row(s)1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Update row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update row(s)1": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait2": {
+      "main": [
+        [
+          {
+            "node": "Discord1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "791c830f-d5e5-4787-8e4c-8e2923252edb",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d93a04ba9d2df1787e7656756b3f31656d2b15dd71394007e69d4b18f38f057b"
+  },
+  "id": "LOkiDbWB6unpuzqZ",
+  "tags": []
+}

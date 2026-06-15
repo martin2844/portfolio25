@@ -82,7 +82,7 @@ The simplest programs that can be written are single-threaded programs, with ins
 
 We must differentiate between *program* and *thread*; The program contains instructions, while the thread consists of the execution of those instructions. Even for single-threaded programs, this distinction matters. If a program contains a loop, then a short program could generate a long thread of execution. Additionally, running the same program ten times would create ten threads, all running the same program.
 
-![mutli and single thread](https://codigomate.com/wp-content/uploads/2025/02/thread-single-multi.png "mutli and single thread")
+![mutli and single thread](/public/posts/thread-single-multi.png "mutli and single thread")
 
 Each thread has a lifetime, which extends from the execution of the first instruction to the time the last instruction is executed. If two threads have overlapping lifetimes, they are called *concurrent* threads.
 
@@ -147,7 +147,7 @@ One way servers anticipate and avoid this situation is by using multiple threads
 
 From the client side, a web browser can also illustrate the concept of **responsiveness**. Imagine that you start loading a fairly heavy page that takes a long time to download. Would you like your computer to freeze until it finishes downloading the page? Probably not; you would expect to be able to continue doing other things while the site finishes loading.
 
-![server threads](https://codigomate.com/wp-content/uploads/2025/02/server-thread.png "server threads")
+![server threads](/public/posts/server-thread.png "server threads")
 
 Moving on to the focus of **resource utilization**, the most obvious scenario is, perhaps, when you have a computer with more than one processor. In that case, if the system executed only one thread at a time, half of the resources would remain unused. Even if the user does not need to perform more than one action at a time, there are certain *internal maintenance* tasks that the computer could perform to keep the second processor busy.
 
@@ -227,7 +227,7 @@ Note that the code before the (L) tag is executed at the time of switching **fro
 
 This code not only saves the stack pointer of the outgoing thread, but also restores the stack pointer of the next thread. Later, the same code will be used to switch back. Therefore, we can count on the original thread's stack pointer to have been restored when control jumps to label L. Thus, when the registers are unstacked, it will be from the original thread's stack, coinciding with the *push* operations at the beginning of the code.
 
-![records and threads](https://codigomate.com/wp-content/uploads/2025/02/registros-e-hilos.png "records and threads")
+![records and threads](/public/posts/registros-e-hilos.png "records and threads")
 
 We can see how this pattern is implemented in a real system by looking at the thread switching code in **Linux** for the **i386** architecture.
 

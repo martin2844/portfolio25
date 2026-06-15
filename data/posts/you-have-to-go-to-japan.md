@@ -25,12 +25,12 @@ Bueno, hace rato con mi novia teníamos ganas de conocer alguna cultura oriental
 > Amo los buddhas
 
 Te cuento Japón desde una perspectiva única, de alguien que no le gusta el anime, no le gusta el sushi, y el ramen meh, no soy fanático de Digimon ni Pokemon, ni ninguna otra cosa asi fuertemente japonesa. Lo más cercano es quizas el Judo? pero ni, me gusta el BJJ. En fin. Igual Japón al día de hoy es el viaje que he hecho que más me gustó. Ahh me olvidaba algo, si me apasionan los autos, y los japoneses de los 90s son los autos que mas gustan, asi que si queres ver coches, quedate hasta el final.  
-![Pokemon originales](https://codigomate.com/wp-content/uploads/2025/08/re-20241115_150145-1.jpg "Pokemon originales")
+![Pokemon originales](/public/posts/re-20241115_150145-1.jpg "Pokemon originales")
 
 > Pokemon red y blue, de esos si soy fan. Perdon por la foto
 
 Llegando a Osaka, si nunca estuviste en Asia (como yo en ese momento) ya me pareció surrealista.  
-![Osaka](https://codigomate.com/wp-content/uploads/2025/08/20241113_173335-scaled.jpg "Osaka")
+![Osaka](/public/posts/20241113_173335-scaled.jpg "Osaka")
 
 > cartel de osaka de los bondis
 
@@ -43,30 +43,30 @@ Los que bajaban las valijas del carrousel de baggage, lo hacían con una delicad
 Para ir de osaka KIX a la ciudad, nos tomamos un colectivo, y los que subían las valijas al colectivo, cuidaban las valijas de una manera que parecía otro continente comparado a los que lo hacen en la terminal de Retiro, Buenos Aires.
 
 Como decía, las señales en japonés, las famosas maquinas expendedoras en todos lados, sacar yenes del cajero.Todo nuevo y divertido. El cafe caliente en botella de aluminio de una maquina expendedora me dejo pasmado.  
-![Cafe de maquina](https://codigomate.com/wp-content/uploads/2025/08/re-20241113_180216.jpg "Cafe de maquina")
+![Cafe de maquina](/public/posts/re-20241113_180216.jpg "Cafe de maquina")
 
 > Cafe de un yen nada mal
 
-![Monedas](https://codigomate.com/wp-content/uploads/2025/08/re-20241113_192006.jpg "Monedas")
+![Monedas](/public/posts/re-20241113_192006.jpg "Monedas")
 
 > Yenes, dolares y euros
 
 Nos compramos unos cafes ya que eran las 5 de la tarde, y teníamos jet lag, nos tomamos eso mientras íbamos en colectivo hasta el centro de Osaka. Ahi paramos en un hotel por una noche, fuimos a comer al famoso distrito gastronómico, y ya con la cantidad de gente, los carteles y la prolijidad de toda la ciudad quedamos flechados.
 
-![Osaka Dotonbori](https://codigomate.com/wp-content/uploads/2025/08/re-20241113_211625.jpg "Osaka Dotonbori")
+![Osaka Dotonbori](/public/posts/re-20241113_211625.jpg "Osaka Dotonbori")
 
 > Famous dotonbori
 
-![Las callecitas](https://codigomate.com/wp-content/uploads/2025/08/re-20241113_205426.jpg "Las callecitas")
+![Las callecitas](/public/posts/re-20241113_205426.jpg "Las callecitas")
 
 > Las callecitas
 
-![Cheers](https://codigomate.com/wp-content/uploads/2025/08/re-20241113_220504.jpg)
+![Cheers](/public/posts/re-20241113_220504.jpg)
 
 > cheers
 
 Al otro dia fuimos a Tokyo con el tren bala, de a poco el miedo a no entender nada se iba yendo. Con un e-sim y datos podes traducir cualquier cosa, y mas o menos te vas entendiendo. Google Maps funciona perfecto. Si sabes usar esas dos cosas viajar por Japón es una pelotudez. Yo no sabia mas q tres palabras. Buenas noches, Hola y gracias.  
-![osaka shin](https://codigomate.com/wp-content/uploads/2025/08/re-20241114_124104.jpg "osaka shin")
+![osaka shin](/public/posts/re-20241114_124104.jpg "osaka shin")
 
 > Te vendian unas pastillitas de menta, la cajita era como un cartel
 
@@ -75,33 +75,33 @@ Al otro dia fuimos a Tokyo con el tren bala, de a poco el miedo a no entender na
 Primero Osaka, y al toque fuimos a Tokyo como para arrancar ahi, luego Kyoto, y finalmente 2 días mas en Osaka.
 
 Debo decir que todas las ciudades tienen lo suyo. Tokyo me pareció obviamente increíbleble, top 3 de mis ciudades preferidas. Kyoto muy turístico todo lo principal, pero tiene miles de templos que no son tan main stream, y son realmente increíbles. Me encanta el budismo y toda esa espiritualidad. Hay algo que producen los templos budistas y la arquitectura japonesa que no me pasa con los templos de otras religiones. Fui a muchas iglesias y algunas mezquitas impresionantes. Pero hay algo del templo, el koi pond, las estatuas de piedra milenarias, que me producen algo, para alguien q no es religioso eso es bastante.  
-![Pagoda](https://codigomate.com/wp-content/uploads/2025/08/re-20241116_105137.jpg "Pagoda")
+![Pagoda](/public/posts/re-20241116_105137.jpg "Pagoda")
 
 > Pagoda de senso ji.
 
-![Templo Kyoto](https://codigomate.com/wp-content/uploads/2025/08/re-20241121_094914.jpg "Templo Kyoto")
+![Templo Kyoto](/public/posts/re-20241121_094914.jpg "Templo Kyoto")
 
 > Templo que entramos de casualidad en Kyoto
 
-![Templo 1000 budas](https://codigomate.com/wp-content/uploads/2025/08/re-20241121_103432.jpg "Templo 1000 budas")
+![Templo 1000 budas](/public/posts/re-20241121_103432.jpg "Templo 1000 budas")
 
 > Templo mil budas en kyoto
 
-![templo 1000 budas](https://codigomate.com/wp-content/uploads/2025/08/re-20241121_110107.jpg "templo 1000 budas")
+![templo 1000 budas](/public/posts/re-20241121_110107.jpg "templo 1000 budas")
 
 > Templo 1000 budas
 
 Si queres ver fotos o videos de lo mas turistico, en youtube y google esta lleno. Nosotros fuimos a ver todas esas cosas, y creo que todo estuvo a la altura de las expectativas. Sin embargo a mi me encanta mirar un poco mas allá, hacia lo normal, las calles paralelas, las que nadie mira, las zonas residenciales normales. Japón no decepcionó
 
-![Edificios no turisticos](https://codigomate.com/wp-content/uploads/2025/08/re-20241117_115026.jpg "Edificios no turisticos")
+![Edificios no turisticos](/public/posts/re-20241117_115026.jpg "Edificios no turisticos")
 
 > Edificios no turisticos
 
-![callecita residencial de barrio de afueras de tokyo](https://codigomate.com/wp-content/uploads/2025/08/re-20241118_131148.jpg)
+![callecita residencial de barrio de afueras de tokyo](/public/posts/re-20241118_131148.jpg)
 
 > Callecita cerca de un templo a las afueras de tokyo
 
-![minato city](https://codigomate.com/wp-content/uploads/2025/08/re-20241117_102457.jpg "Cerca de senso ji")
+![minato city](/public/posts/re-20241117_102457.jpg "Cerca de senso ji")
 
 > Calle random de minato city, tokyo
 
@@ -110,20 +110,20 @@ Si queres ver fotos o videos de lo mas turistico, en youtube y google esta lleno
 Hasta las partes feas de Japón me resultaban aesthetic jaja.  
 Pero en serio, no se si son los Kanjis, o que, pero caminando por lugares que claramente estan mas descuidados, o no tienen tanta inversion, me resultaban atractivos. Puede ser el hecho también de que todo es nuevo. Seguro fué eso.
 
-![Cables](https://codigomate.com/wp-content/uploads/2025/08/re-20241116_140423.jpg "Cables")
+![Cables](/public/posts/re-20241116_140423.jpg "Cables")
 
 > Callejon de Asakusa
 
-![Galeria Random en asakusa](https://codigomate.com/wp-content/uploads/2025/08/re-20241116_141310.jpg "Galeria Random en asakusa")
+![Galeria Random en asakusa](/public/posts/re-20241116_141310.jpg "Galeria Random en asakusa")
 
 > Galeria random en asakusa
 
 La comida bien, sin que me guste el pescado zafas. Hay de todo, si te gusta el pescado obviamente mejor. Tenes el mejor del mundo. Pero si sos como yo, igual hay de todo. Arroz, omellettes, ramen, tonkatsu, yakisoba... en fin muchas comidas no pejetarianas. Tambien hay gastronomía internacional, obvio vas a conseguir pizzas, mac donalds y demás pero aprovecha la comida local.  
-![Comida rapida](https://codigomate.com/wp-content/uploads/2025/08/re-20241115_113613.jpg "Comida rapida")
+![Comida rapida](/public/posts/re-20241115_113613.jpg "Comida rapida")
 
 > La comida rápida japonesa es excelente y sale 2 mangos
 
-![8 dolares](https://codigomate.com/wp-content/uploads/2025/08/re-20241123_151940.jpg "8 dolares")
+![8 dolares](/public/posts/re-20241123_151940.jpg "8 dolares")
 
 > Todo esto salio menos de 8 dolares, riquisimo, y barato.
 

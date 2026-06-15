@@ -1,0 +1,422 @@
+{
+  "name": "Ipad Mini Scraper",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 23,
+              "triggerAtMinute": 59
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "79b973c2-1af1-4315-953e-1d64c26e7ebf",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "https://api.wallapop.com/api/v3/search",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "category_id",
+              "value": "24200"
+            },
+            {
+              "name": "time_filter",
+              "value": "today"
+            },
+            {
+              "name": "min_sale_price",
+              "value": "100"
+            },
+            {
+              "name": "max_sale_price",
+              "value": "16000"
+            },
+            {
+              "name": "keywords",
+              "value": "ipad mini"
+            },
+            {
+              "name": "order_by",
+              "value": "most_relevance"
+            },
+            {
+              "name": "source",
+              "value": "side_bar_filters"
+            },
+            {
+              "name": "search_id",
+              "value": "5a0e535a-8336-47e6-850f-ee3903f64af2"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Cache-Control",
+              "value": "no-cache"
+            },
+            {
+              "name": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "name": "Origin",
+              "value": "https://es.wallapop.com"
+            },
+            {
+              "name": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "Referer",
+              "value": "https://es.wallapop.com/"
+            },
+            {
+              "name": "Sec-Fetch-Dest",
+              "value": "empty"
+            },
+            {
+              "name": "Sec-Fetch-Mode",
+              "value": "cors"
+            },
+            {
+              "name": "Sec-Fetch-Site",
+              "value": "same-site"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "accept-language",
+              "value": "es,en-ES;q=0.9"
+            },
+            {
+              "name": "deviceos",
+              "value": "0"
+            },
+            {
+              "name": "mpid",
+              "value": "2928281870654783917"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"Windows\""
+            },
+            {
+              "name": "x-appversion",
+              "value": "813280"
+            },
+            {
+              "name": "x-deviceid",
+              "value": "1f7f9448-1ebf-403a-86f5-f6a9176aeff4"
+            },
+            {
+              "name": "x-deviceos",
+              "value": "0"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        208,
+        0
+      ],
+      "id": "f47f1514-3dbb-4010-a947-6582de88d3dc",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "data.section.payload.items",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "842b1243-65a6-4a6a-b979-6ff6bf590cfc",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "54e2c2c4-59c4-4cf5-a933-c2da2b8526ad",
+              "name": "wallapop_id",
+              "value": "={{ $json.id }}",
+              "type": "string"
+            },
+            {
+              "id": "7f0d0912-ada4-4cea-8e9a-ac30e408f996",
+              "name": "title",
+              "value": "={{ $json.title }}",
+              "type": "string"
+            },
+            {
+              "id": "9f08452d-b416-4146-8dc1-7b97d17f215e",
+              "name": "description",
+              "value": "={{ $json.description }}",
+              "type": "string"
+            },
+            {
+              "id": "68a8ad71-0be4-4b38-a0ea-bdee99b8635e",
+              "name": "image",
+              "value": "={{ $json.images[0].urls.big }}",
+              "type": "string"
+            },
+            {
+              "id": "c45ccaf3-ca96-4268-aa66-404efd223e53",
+              "name": "price",
+              "value": "={{ $json.price.amount }} {{ $json.price.currency }}",
+              "type": "string"
+            },
+            {
+              "id": "72f2a42d-c86e-4f4c-a10c-beb64e912487",
+              "name": "url",
+              "value": "=https://es.wallapop.com/item/{{ $json.web_slug }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        624,
+        0
+      ],
+      "id": "59d29701-5348-4ebb-a948-ffeb4e194f75",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "operation": "rowNotExists",
+        "dataTableId": {
+          "__rl": true,
+          "value": "Z9rrxCsRnvELgbLq",
+          "mode": "list",
+          "cachedResultName": "ipad-minis",
+          "cachedResultUrl": "/projects/jlSzYHfzbLbDGI8l/datatables/Z9rrxCsRnvELgbLq"
+        },
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "wallapop_id",
+              "keyValue": "={{ $json.wallapop_id }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        832,
+        0
+      ],
+      "id": "70d28f2c-80c1-489d-a276-b5939ebf5a3c",
+      "name": "If row does not exist"
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "value": "Z9rrxCsRnvELgbLq",
+          "mode": "list",
+          "cachedResultName": "ipad-minis",
+          "cachedResultUrl": "/projects/jlSzYHfzbLbDGI8l/datatables/Z9rrxCsRnvELgbLq"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "wallapop_id": "={{ $json.wallapop_id }}"
+          },
+          "matchingColumns": [
+            "wallapop_id"
+          ],
+          "schema": [
+            {
+              "id": "wallapop_id",
+              "displayName": "wallapop_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        0
+      ],
+      "id": "b3ea3395-3c5a-48d9-bbde-873841caffb2",
+      "name": "Insert row"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=Encontramos este resultado:\n{{ $('If row does not exist').item.json.price }}\n {{ $('If row does not exist').item.json.title }}\n\n{{ $('If row does not exist').item.json.description }}\n\n{{ $('If row does not exist').item.json.url }}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        1472,
+        0
+      ],
+      "id": "383893f6-ae7e-4212-b80d-5f41360fc7a8",
+      "name": "Discord",
+      "webhookId": "293ed3af-4174-4e92-95bf-9e57eb869ef9",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "DQElmgikF8oywW4T",
+          "name": "Discord Webhook account 5"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 1
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1280,
+        0
+      ],
+      "id": "e044c263-d2c1-4c2e-a52a-7476b8f62d7d",
+      "name": "Wait",
+      "webhookId": "29080095-f1d3-4d20-8da0-69825baf1b6b"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "If row does not exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If row does not exist": {
+      "main": [
+        [
+          {
+            "node": "Insert row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert row": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "7a741286-cf9a-47e2-967a-0cd422907b85",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d93a04ba9d2df1787e7656756b3f31656d2b15dd71394007e69d4b18f38f057b"
+  },
+  "id": "I8qUCNn21yqnN8Ug",
+  "tags": []
+}

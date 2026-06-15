@@ -9,7 +9,7 @@ tags: ["nextjs"]
 
 There was a situation at work where a project in React (React without anything else, the old way, with Webpack) began to need some way to maintain a "global" state. We needed to access user information from multiple components, and sometimes there were 4 or 5 levels, or even more, deep in the component hierarchy tree.
 
-![Many levels](https://codigomate.com/wp-content/uploads/2025/01/screenshot-2025-01-28-092444.png "Many levels")
+![Many levels](/public/posts/screenshot-2025-01-28-092444.png "Many levels")
 
 ---
 
@@ -140,7 +140,7 @@ In React, it makes sense to have a `Context` to avoid so much *prop drilling*.
 
 Because Next.js has its paths defined in folders and *out of the box* comes with SSR components, we are loading the user from the server. Having a well-put together layout for each page and the necessary state in each one, the user information and/or anything that needs to be global is one or two levels away from the component, three or four at most.
 
-![few levels deep](https://codigomate.com/wp-content/uploads/2025/01/Screenshot-2025-01-28-092703.png "few levels deep")
+![few levels deep](/public/posts/Screenshot-2025-01-28-092703.png "few levels deep")
 
 I think that with four levels it doesn't even make sense to add global status, especially for such small things.
 

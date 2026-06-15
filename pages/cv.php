@@ -12,11 +12,12 @@ $personal = $cv['personalInfo'] ?? [];
 ob_start();
 ?>
 
-<section>
-    <header class="section-header">
-        <h2>CV — <?= htmlspecialchars($personal['name'] ?? 'Martin Chammah') ?></h2>
+<section class="cv-page">
+    <header class="cv-header">
+        <h1><?= htmlspecialchars($personal['name'] ?? 'Martin Chammah') ?></h1>
+        <div class="meta"><?= htmlspecialchars($personal['title'] ?? 'Software Engineer') ?> • <?= htmlspecialchars($personal['location'] ?? 'Barcelona, Spain') ?></div>
     </header>
-    
+
     <div class="article-page">
         <section class="mb-0">
             <?= render_section_header(['title' => 'Experience']) ?>

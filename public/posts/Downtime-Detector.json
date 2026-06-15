@@ -1,0 +1,148 @@
+{
+  "name": "Downtime Detector",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -16,
+        0
+      ],
+      "id": "5af8e0b7-654a-4623-8ee4-d54282e2d7ed",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "https://codigomate.com",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        192,
+        0
+      ],
+      "id": "e82545ea-136d-40c6-8a9a-5d3ad7a3f2aa",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "5f24e863-9d83-4f09-9cde-1c271e10a7be",
+              "leftValue": "={{ $json.statusCode }}",
+              "rightValue": 200,
+              "operator": {
+                "type": "number",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "f8fb7310-7023-4edb-9327-57f3da147208",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": ":red_circle: @here page is down",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        672,
+        96
+      ],
+      "id": "318ac0f5-cfc5-4479-b2fc-76dbfbba9032",
+      "name": "Discord",
+      "webhookId": "b95937e1-e370-4ab6-a2b2-6313137aba46",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "F62sCGByUQw3qwt6",
+          "name": "Discord Webhook account 4"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "9dad9ba9-1385-4a80-bb8c-77a0d70eb209",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d93a04ba9d2df1787e7656756b3f31656d2b15dd71394007e69d4b18f38f057b"
+  },
+  "id": "q18Khrx2hPMk5SGc",
+  "tags": []
+}

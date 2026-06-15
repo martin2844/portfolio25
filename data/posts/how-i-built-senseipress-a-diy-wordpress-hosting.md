@@ -36,7 +36,7 @@ In the VPS\_Pools as I call them, we are going to have
 2. Database in MariaDB
 3. An API in Go that allows fine handling of different actions on Docker containers through HTTP. From migrating sites, making backups, changing admin passwords, factory reset and more.
 
-![Sensei Architecture](https://codigomate.com/wp-content/uploads/2025/03/Pasted-image-20250331200014.png "Sensei Architecture")
+![Sensei Architecture](/public/posts/Pasted-image-20250331200014.png "Sensei Architecture")
 
 And not much more than that. Even so, it all seems small, but there are lines and lines of code in scripts, endpoints and automations to create the following flow:
 
@@ -53,7 +53,7 @@ As I mentioned, I built the frontend with **Next.js** and a **SQLite** base (bet
 * User panels to view your sites, make backups, and more.
 * Admin panel to manage deployments, resources and backups.  
   All actions:  
-  ![Sensei Dashboard](https://codigomate.com/wp-content/uploads/2025/03/Pasted-image-20250331194504.png "Sensei Dashboard")
+  ![Sensei Dashboard](/public/posts/Pasted-image-20250331194504.png "Sensei Dashboard")
 
 They are actually communications via HTTP to the Go API that lives on the same WordPress VPS. And this is run through the Next.js server - it is not a direct communication between the Sensei front end and the associated pool.
 

@@ -60,8 +60,8 @@ In this video I went deep into n8n in “level 2” mode: e-commerce scraping, c
 
 ## Download the video workflows
 
-* Wallapop Scraper: <https://codigomate.com/wp-content/uploads/2025/11/3a.json>
-* ArgenProp Scraper: <https://codigomate.com/wp-content/uploads/2025/11/3b.json>
+* Wallapop Scraper: [3a.json](/public/posts/3a.json)
+* ArgenProp Scraper: [3b.json](/public/posts/3b.json)
 
 You import the JSON into n8n and you can play with your own keywords, page limits and filters.
 

@@ -30,8 +30,7 @@ ob_start();
 <section class="about-page">
     <article class="article-page">
         <header>
-            <h1><?= htmlspecialchars($fm['name']) ?></h1>
-            <div class="meta"><?= htmlspecialchars($fm['title']) ?> • <?= htmlspecialchars($fm['location']) ?></div>
+            <h1>About</h1>
         </header>
         
         <div class="article-body">
