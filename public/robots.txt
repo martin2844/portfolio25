@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /public/projects/
+Disallow: /includes/
+Disallow: /templates/
+Disallow: /pages/
+Disallow: /data/
+
+Sitemap: https://martinchammah.dev/sitemap.xml

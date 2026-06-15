@@ -1,0 +1,21 @@
+services:
+  ssr-site-view:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3003:8080"
+    volumes:
+      - .:/var/www:delegated
+      - ./nginx-ssr.dev.conf:/etc/nginx/nginx.conf:ro
+      - ./php-fpm.dev.conf:/usr/local/etc/php-fpm.d/www.conf:ro
+      - nginx_cache:/tmp/nginx
+      - nginx_logs:/var/log/nginx
+    container_name: minimal-ssr-site-view
+    environment:
+      - PHP_ENV=development
+    restart: unless-stopped
+
+volumes:
+  nginx_cache:
+  nginx_logs:

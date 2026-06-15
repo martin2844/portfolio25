@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/includes/functions.php';
+
 // Simple but fast router
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -31,7 +33,11 @@ switch ($uri) {
     case '/cv':
         require __DIR__ . '/pages/cv.php';
         break;
-        
+
+    case '/sitemap.xml':
+        require __DIR__ . '/pages/sitemap.php';
+        break;
+
     default:
         // Check for blog posts
         if (preg_match('#^/blog/([a-z0-9-]+)$#', $uri, $matches)) {

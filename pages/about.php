@@ -1,55 +1,61 @@
 <?php
 require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/../includes/components.php';
 
 $about = DataLoader::getAbout();
 $currentPage = 'about';
 $pageTitle = 'About';
+$pageDescription = 'About Martin Chammah — full stack software engineer based in Barcelona, Spain.';
 
 if (!$about) {
-    $content = '<div class="card"><h2>About page not found</h2></div>';
+    ob_start();
+    ?>
+    <div class="card message-card">
+        <h2>About page not found</h2>
+        <p>Sorry, the about page content is missing.</p>
+    </div>
+    <?php
+    $content = ob_get_clean();
     require __DIR__ . '/../templates/layout.php';
     exit;
 }
 
+$fm = $about['frontmatter'];
+$skills = $fm['skills'] ?? [];
+$interests = $fm['interests'] ?? [];
+
 ob_start();
 ?>
 
-<div class="card">
-    <h2 style="color: #58a6ff; margin-bottom: 20px;"><?= $about['frontmatter']['name'] ?></h2>
-    <div class="meta" style="margin-bottom: 20px;"><?= $about['frontmatter']['title'] ?> • <?= $about['frontmatter']['location'] ?></div>
-    
-    <div style="margin-bottom: 15px;"><?= $about['content'] ?></div>
-    
-    <div style="margin-top: 30px;">
-        <h3 style="color: #58a6ff; margin-bottom: 15px;">Skills</h3>
-        <div class="tags">
-            <?php
-            $skills = explode(',', $about['frontmatter']['skills'] ?? '');
-            foreach ($skills as $skill): ?>
-                <span class="tag"><?= trim($skill, '" "') ?></span>
-            <?php endforeach; ?>
+<section class="about-page">
+    <article class="article-page">
+        <header>
+            <h1><?= htmlspecialchars($fm['name']) ?></h1>
+            <div class="meta"><?= htmlspecialchars($fm['title']) ?> • <?= htmlspecialchars($fm['location']) ?></div>
+        </header>
+        
+        <div class="article-body">
+            <?= $about['content'] ?>
         </div>
-    </div>
-    
-    <div style="margin-top: 20px;">
-        <h3 style="color: #58a6ff; margin-bottom: 15px;">Interests</h3>
-        <div class="tags">
-            <?php
-            $interests = explode(',', $about['frontmatter']['interests'] ?? '');
-            foreach ($interests as $interest): ?>
-                <span class="tag"><?= trim($interest, '" "') ?></span>
-            <?php endforeach; ?>
+        
+        <section class="card mt-4 reading-column">
+            <h3>Skills</h3>
+            <?= render_tag_list($skills) ?>
+        </section>
+        
+        <section class="card mt-2 reading-column">
+            <h3>Interests</h3>
+            <?= render_tag_list($interests) ?>
+        </section>
+        
+        <div class="contact-bar">
+            <?= render_button(['href' => 'mailto:' . $fm['email'], 'label' => '✉ ' . $fm['email']]) ?>
+            <?= render_button(['href' => 'https://' . $fm['linkedin'], 'label' => '💼 LinkedIn', 'external' => true]) ?>
+            <?= render_button(['href' => 'https://' . $fm['github'], 'label' => '💻 GitHub', 'external' => true]) ?>
         </div>
-    </div>
-    
-    <div style="margin-top: 30px;">
-        <a href="mailto:<?= $about['frontmatter']['email'] ?>" class="link">✉ Contact me</a>
-        <a href="https://<?= $about['frontmatter']['linkedin'] ?>" class="link" target="_blank">💼 LinkedIn</a>
-        <a href="https://<?= $about['frontmatter']['github'] ?>" class="link" target="_blank">💻 GitHub</a>
-    </div>
-</div>
+    </article>
+</section>
 
 <?php
 $content = ob_get_clean();
 require __DIR__ . '/../templates/layout.php';
-?>

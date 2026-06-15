@@ -1,25 +1,24 @@
 projects:
-  - name: "Vid4.pro"
-    description: "Extract wisdom from youtube videos in just one click. Essentially all nextjs with sqlite, deployed with docker on a vps"
-    technologies: ["nextjs", "tailwindcss", "sqlite", "openai"]
-    websiteLink: "https://vid4.pro"
-    image: "https://cloud.codigomate.com/joh099.png"
-  
-  - name: "jscloud.online"
-    description: "Run javascript code on demand. Schedule it for later, get notifications with results when its done. Built on nextjs, sqlite and nodejs."
-    technologies: ["nextjs", "sqlite", "nodejs"]
-    image: "https://cloud.codigomate.com/0c42mx.png"
-    websiteLink: "https://jscloud.online"
-  
-  - name: "Next_File_Server"
-    description: "A small little project that allows you to upload files and download them. It features private and public files, and also the feature of sharing a link for someone to upload a file. The idea is to take advantage of empty storage you might have on your vps"
-    technologies: ["nextjs", "sqlite"]
-    githubLink: "https://github.com/martin2844/next-file-server"
-    websiteLink: "https://files.codigomate.com"
-    image: "https://cloud.codigomate.com/8tet6o.png"
-  
+  - name: "CleanCut Video"
+    description: "Desktop app that auto-cuts silences from talking videos and adds subtitles locally. Runs on Windows, macOS and Linux with no uploads and no subscription."
+    technologies: ["electron", "react", "typescript", "vite", "ffmpeg"]
+    websiteLink: "https://cleancut.video"
+    image: "/public/projects/cleancut-og.jpg"
+
+  - name: "clasfic.ar"
+    description: "Autonomous vehicle plate-data aggregation platform. Ingests classified listings from multiple sources, enriches them with AI, and provides plate-based query services for Argentine vehicle data."
+    technologies: ["nextjs", "nodejs", "postgresql", "docker", "puppeteer"]
+    websiteLink: "https://clasfic.ar"
+    image: "/public/projects/clasific-og.jpg"
+
+  - name: "proyect.ar"
+    description: "AI architectural rendering platform for the Argentine market. Upload sketches, plans or 3D models and get photorealistic renders in minutes, paying in pesos via MercadoPago."
+    technologies: ["nextjs", "typescript", "sqlite", "openai", "mercadopago"]
+    websiteLink: "https://proyect.ar"
+    image: "/public/projects/proyectar-og.jpg"
+
   - name: "Knext"
-    description: "A Next.js, knex and sqlite starter template. Built in auth too. You wanna ship fast? combine this with coolify, v0, and cursor and ship projects in a day"
-    technologies: ["nextjs", "knex", "sqlite"]
+    description: "A Next.js starter template with NextAuth, TailwindCSS, SQLite and Knex. Ships with migrations, Docker setup and GitHub auth out of the box — built for shipping fast."
+    technologies: ["nextjs", "nextauth", "tailwindcss", "sqlite", "knex"]
     githubLink: "https://github.com/martin2844/knext"
-    image: "https://cloud.codigomate.com/2r0x5u.png"
+    image: "/public/projects/knext-og.jpg"
