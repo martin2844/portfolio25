@@ -9,7 +9,7 @@ $notes = DataLoader::getNotes();
 
 $currentPage = 'home';
 $pageTitle = 'Home';
-$pageDescription = 'Martin Chammah - Full stack software engineer based in Barcelona. Skilled in TypeScript, Next.js, SQL, and Go. Latest blog posts and projects.';
+$pageDescription = 'Full-stack software engineer in Barcelona building fast web products with TypeScript, Next.js, SQL, and Go.';
 $pageKeywords = 'Martin Chammah, Software Engineer, Full Stack Developer, TypeScript, Next.js, SQL, Go, Barcelona, Portfolio';
 $canonicalUrl = 'https://martinchammah.dev/';
 $jsonLd = [

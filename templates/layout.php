@@ -13,6 +13,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="<?= e($ogType ?? 'website') ?>">
     <meta property="og:url" content="<?= e($canonicalUrl ?? 'https://martinchammah.dev' . $_SERVER['REQUEST_URI']) ?>">
+    <meta property="og:site_name" content="Martin Chammah">
     <meta property="og:title" content="<?= e($ogTitle ?? ($pageTitle ? $pageTitle . ' | Martin Chammah' : 'Martin Chammah | Software Engineer')) ?>">
     <meta property="og:description" content="<?= e($pageDescription ?? 'Full stack software engineer skilled in TypeScript, Next.js, SQL, and Go. Barcelona, Spain.') ?>">
     <meta property="og:image" content="<?= e($ogImage ?? 'https://martinchammah.dev/og-image.jpg') ?>">
