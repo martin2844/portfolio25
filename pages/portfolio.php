@@ -10,11 +10,16 @@ $pageDescription = 'Selected projects by Martin Chammah — full stack web appli
 ob_start();
 ?>
 
+<section class="page-hero">
+    <h1>Portfolio</h1>
+    <p class="lead">A selection of shipped products, experiments, and tooling — mostly web, mostly pragmatic, all built to solve a real problem.</p>
+</section>
+
 <section>
     <?= render_section_header(['title' => 'projects']) ?>
     <div class="grid grid-2">
-        <?php foreach ($projects as $project): ?>
-            <?= render_project_card(['item' => $project]) ?>
+        <?php foreach ($projects as $i => $project): ?>
+            <?= render_project_card(['item' => $project, 'index' => $i]) ?>
         <?php endforeach; ?>
     </div>
 </section>

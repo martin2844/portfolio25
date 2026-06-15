@@ -35,6 +35,12 @@
     <?php if (isset($jsonLd)): ?>
     <script type="application/ld+json"><?= json_encode($jsonLd, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
     <?php endif; ?>
+
+    <!-- Preload fonts to prevent FOUT -->
+    <link rel="preload" href="/public/fonts/ATSeasonSansVF.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/public/fonts/Geist.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/public/fonts/GeistMono.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/public/fonts/fonts.css">
     <link rel="stylesheet" href="/public/styles.css">
 </head>
@@ -42,9 +48,11 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="container">
         <header class="site-header" role="banner">
-            <span class="site-title" id="site-title">martin_chammah</span>
-            <div class="site-subtitle">software_engineer.barcelona</div>
-            
+            <div class="site-brand">
+                <a href="/" class="site-title" id="site-title" aria-label="Martin Chammah home">martin_chammah</a>
+                <span class="site-subtitle">software_engineer.barcelona</span>
+            </div>
+
             <nav class="main-nav" role="navigation" aria-label="Main navigation">
                 <a href="/" class="nav-link <?= $currentPage === 'home' ? 'active' : '' ?>" <?= $currentPage === 'home' ? 'aria-current="page"' : '' ?>>home</a>
                 <a href="/blog" class="nav-link <?= $currentPage === 'blog' ? 'active' : '' ?>" <?= $currentPage === 'blog' ? 'aria-current="page"' : '' ?>>blog</a>

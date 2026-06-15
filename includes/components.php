@@ -242,15 +242,21 @@ function render_project_card($props) {
     $name = $item['name'] ?? '';
     $desc = $item['description'] ?? '';
     $tech = $item['technologies'] ?? [];
-    $image = $item['image'] ?? '';
+    $image = !empty($props['hideImage']) ? '' : ($item['image'] ?? '');
     $links = [];
     if (!empty($item['githubLink'])) $links[] = ['href' => $item['githubLink'], 'label' => 'github', 'external' => true];
     if (!empty($item['websiteLink'])) $links[] = ['href' => $item['websiteLink'], 'label' => 'website', 'external' => true];
-    
-$priority = !empty($props['priority']);
+
+    $priority = !empty($props['priority']);
     $loadingAttr = $priority ? 'fetchpriority="high"' : 'loading="lazy"';
-    
+    $index = isset($props['index']) ? (int)$props['index'] : null;
+    $featured = !empty($props['featured']);
+
+    $classes = 'card project-card' . ($featured ? ' project-card-featured' : '');
     $html = '';
+    if ($index !== null) {
+        $html .= '<span class="project-number">' . str_pad($index + 1, 2, '0', STR_PAD_LEFT) . '</span>';
+    }
     if ($image) {
         $html .= '<div class="project-image"><img src="' . htmlspecialchars($image) . '" alt="' . htmlspecialchars($name) . '" width="1200" height="630" ' . $loadingAttr . '></div>';
     }
@@ -258,14 +264,14 @@ $priority = !empty($props['priority']);
     $html .= '<p>' . htmlspecialchars($desc) . '</p>';
     $html .= render_tag_list($tech);
     if ($links) {
-        $html .= '<div class="links">';
+        $html .= '<div class="project-links">';
         foreach ($links as $link) {
             $html .= render_button($link);
         }
         $html .= '</div>';
     }
-    
-    return '<article class="card project-card">' . $html . '</article>';
+
+    return '<article class="' . $classes . '">' . $html . '</article>';
 }
 
 function render_experience_item($props) {

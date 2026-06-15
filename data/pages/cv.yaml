@@ -8,10 +8,10 @@ personalInfo:
 
 experience:
   - company: "Datacamp"
-    position: "Software Engineer"
+    position: "Senior Software Engineer"
     period: "2023 - Present"
     location: "Remote"
-    description: "Working on the team responsible for creating automated and human translation solutions across the entire platform, utilizing various AI tools and working through multiple services. I also contribute solutions to various other teams, acting as a versatile jack-of-all-trades who facilitates workflows across the organization. I work with diverse technologies including Node.js (Koa, NestJS), Java, Ruby, and React, adapting to whatever stack is needed to solve problems effectively."
+    description: "Senior engineer on the localization team, building automated and human translation solutions that power content across the platform. Owns AI-driven translation pipelines, internal tooling, and cross-service architecture, and regularly partners with other teams to unblock complex projects and ship end-to-end solutions across Node.js (Koa, NestJS), Java, Ruby, and React stacks."
   
   - company: "Skipify"
     position: "Software Engineer"
@@ -35,7 +35,7 @@ education:
   - degree: "BA in Computer Science"
     institution: "University of the People"
     period: "2021 - 2025"
-    status: "In Progress"
+    status: "Completed"
   
   - degree: "BA, MA in Architecture"
     institution: "University of Buenos Aires"

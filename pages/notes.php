@@ -10,6 +10,11 @@ $pageDescription = 'Short notes and quick thoughts by Martin Chammah.';
 ob_start();
 ?>
 
+<section class="page-hero">
+    <h1>Notes</h1>
+    <p class="lead">Short thoughts, snippets, and half-formed ideas that don't quite belong in a full post.</p>
+</section>
+
 <section>
     <?= render_section_header(['title' => 'notes']) ?>
     <div class="post-list grid-2">

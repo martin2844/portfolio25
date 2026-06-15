@@ -49,7 +49,7 @@ ob_start();
 <?php if ($featuredProject): ?>
 <section>
     <?= render_section_header(['title' => 'featured project', 'href' => '/portfolio', 'linkText' => 'view all →']) ?>
-    <?= render_project_card(['item' => $featuredProject, 'priority' => true]) ?>
+    <?= render_project_card(['item' => $featuredProject, 'priority' => true, 'hideImage' => true]) ?>
 </section>
 <?php endif; ?>
 

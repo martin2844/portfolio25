@@ -56,6 +56,11 @@ $allTags = DataLoader::getAllTags('posts');
 ob_start();
 ?>
 
+<section class="page-hero">
+    <h1>Blog</h1>
+    <p class="lead">Notes on TypeScript, Next.js, SQL, Go, and the craft of building fast, pragmatic web products.</p>
+</section>
+
 <section>
     <?= render_section_header(['title' => 'blog posts']) ?>
     
