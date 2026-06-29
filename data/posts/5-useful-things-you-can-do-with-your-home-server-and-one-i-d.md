@@ -1,8 +1,8 @@
 ---
-title: "5 useful things you can do with your home server (and one I don't recommend)"
+title: "5 Home Server Projects (and One to Skip)"
 publishDate: "2025-05-18"
 slug: "5-useful-things-you-can-do-with-your-home-server-and-one-i-d"
-excerpt: "Lately they wrote to me a lot: “Hey, I have a mini PC… what can I do with this?” So I started to compile the 5 things that give you the most value if you have a home server, plus one that I would not ..."
+excerpt: "You got a mini PC and wonder what to do with it. These five home server projects give real value, plus one that sounds cool but I would not recommend."
 readingTime: 3
 tags: ["docker", "n8n"]
 ---

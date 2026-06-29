@@ -1,15 +1,15 @@
 ---
-title: "Context, Redux and Zustand in Next.js - Which one to use and when?"
+title: "Context, Redux or Zustand in Next.js?"
 publishDate: "2025-01-28"
 slug: "context-redux-and-zustand-in-nextjs-which-one-to-use-and-whe"
-excerpt: "There was a situation at work where a project in React (React without anything else, the old way, with Webpack) began to need some way to maintain a \"global\" state. We needed to access user informatio..."
+excerpt: "A work project forced me to compare Context, Redux and Zustand for global state. Here is when each one makes sense in React and Next.js."
 readingTime: 8
 tags: ["nextjs"]
 ---
 
 There was a situation at work where a project in React (React without anything else, the old way, with Webpack) began to need some way to maintain a "global" state. We needed to access user information from multiple components, and sometimes there were 4 or 5 levels, or even more, deep in the component hierarchy tree.
 
-![Many levels](/public/posts/screenshot-2025-01-28-092444.png "Many levels")
+![Many levels](/public/posts/screenshot-2025-01-28-092444.webp "Many levels")
 
 ---
 
@@ -55,7 +55,7 @@ const UserProfile = () => {
 export defaultUserProfile;
 ```
 
-#### And then? What happened? Why didn't I use it?
+## And then? What happened? Why didn't I use it?
 
 Well, at work it's not that simple. They require that each new bookstore have a justification; It's no use saying "it's simpler and that's it". It has to be analyzed from several points of view:
 
@@ -140,7 +140,7 @@ In React, it makes sense to have a `Context` to avoid so much *prop drilling*.
 
 Because Next.js has its paths defined in folders and *out of the box* comes with SSR components, we are loading the user from the server. Having a well-put together layout for each page and the necessary state in each one, the user information and/or anything that needs to be global is one or two levels away from the component, three or four at most.
 
-![few levels deep](/public/posts/Screenshot-2025-01-28-092703.png "few levels deep")
+![few levels deep](/public/posts/Screenshot-2025-01-28-092703.webp "few levels deep")
 
 I think that with four levels it doesn't even make sense to add global status, especially for such small things.
 
@@ -245,7 +245,7 @@ The same would happen with `i18n`. If we had to manage locals without any librar
 
 The case where I found that I do need global state is when there are certain options or information that the user gives us and we want to persist it temporarily while navigating through different routes.
 
-#### Example: a *flow* of "Get Started"
+### Example: a *flow* of "Get Started"
 
 * User chooses certain options and clicks pay.
 * You are redirected to complete your information.

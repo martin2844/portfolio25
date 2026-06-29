@@ -2,7 +2,7 @@
 title: "Don't learn programming in 2025- right?"
 publishDate: "2025-02-26"
 slug: "dont-learn-programming-in-2025-right"
-excerpt: "Lately I see a lot of “don't study programming, that's it” floating around. They write to me with the doubt: “Am I late?” and “is it worth starting now?” I made this video to bring the noise down to e..."
+excerpt: "Is it too late to learn programming in 2025? I break down the noise, the market reality and why starting now is still a solid bet."
 readingTime: 2
 tags: ["react", "postgres", "coolify", "javascript", "python"]
 ---

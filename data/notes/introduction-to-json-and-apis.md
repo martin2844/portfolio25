@@ -1,13 +1,13 @@
 ---
-title: "Introduction to JSON and APIs"
+title: "Introduction to JSON and APIs for Beginners"
 publishDate: "2021-01-08"
 slug: "introduction-to-json-and-apis"
-excerpt: "JSON Javascript Object Notation What is JSON? How is a JSON file structured? What is a JSON for? What does JSON have to do with APIs? In this short tutorial we are going to see all this and more with ..."
+excerpt: "What is JSON, how is it structured and what does it have to do with APIs? A beginner-friendly tutorial with a real API example."
 readingTime: 1
 tags: ["javascript"]
 ---
 
-# JSON Javascript Object Notation
+## JSON Javascript Object Notation
 
 What is JSON? How is a JSON file structured? What is a JSON for? What does JSON have to do with APIs? In this short tutorial we are going to see all this and more with a real example of an API. Let's understand JSON and its close relationship with APIS.
 

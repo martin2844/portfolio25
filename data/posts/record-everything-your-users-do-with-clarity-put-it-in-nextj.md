@@ -1,8 +1,8 @@
 ---
-title: "Record EVERYTHING your users do (with Clarity) - put it in nextjs"
+title: "Track User Behavior with Microsoft Clarity"
 publishDate: "2025-04-10"
 slug: "record-everything-your-users-do-with-clarity-put-it-in-nextj"
-excerpt: "For a while I wanted to bring something simple, free and that gives value to your touch. Microsoft Clarity is exactly that: a “put and see” to understand how your users navigate, with heat maps and se..."
+excerpt: "Microsoft Clarity records user sessions, heatmaps and scroll data for free. Here is how to add it to a Next.js app and actually use the insights."
 readingTime: 3
 tags: ["nextjs"]
 ---

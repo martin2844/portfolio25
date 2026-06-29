@@ -1,13 +1,13 @@
 ---
-title: "Lucky Times"
+title: "How I Got a Free MacBook Pro by Accident"
 publishDate: "2024-10-26T14:00:00Z"
-excerpt: "How I got lucky and got a macbook pro for free."
+excerpt: "A story about luck, quitting a job and ending up with a free 2020 M1 MacBook Pro after a shipping label never made it back to the US."
 readingTime: 2
 tags: ["lucky", "hardware"]
 slug: "lucky-times"
 ---
 
-# Lucky Times
+## Lucky Times
 
 Few times in my life I felt lucky, like chance was on my side. I've been very fortunate in general, but never felt lucky like those people who win the lottery or get a free upgrade to business class.
 

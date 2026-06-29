@@ -1,8 +1,8 @@
 ---
-title: "How I Built SenseiPress - A DIY WordPress Hosting"
+title: "Building My Own WordPress Hosting Service"
 publishDate: "2025-03-31"
 slug: "how-i-built-senseipress-a-diy-wordpress-hosting"
-excerpt: "A while ago I came across a question that I couldn't get out of my head: what if I set up my own WordPress hosting? Not a generic one, not one overloaded with cPanel and a thousand options that no one..."
+excerpt: "What if you built your own WordPress hosting instead of using cPanel? Here is how I set up SenseiPress, from the first prototype to a working service."
 readingTime: 5
 tags: ["wordpress", "nextjs", "docker", "sqlite"]
 ---
@@ -36,7 +36,7 @@ In the VPS\_Pools as I call them, we are going to have
 2. Database in MariaDB
 3. An API in Go that allows fine handling of different actions on Docker containers through HTTP. From migrating sites, making backups, changing admin passwords, factory reset and more.
 
-![Sensei Architecture](/public/posts/Pasted-image-20250331200014.png "Sensei Architecture")
+![Sensei Architecture](/public/posts/Pasted-image-20250331200014.webp "Sensei Architecture")
 
 And not much more than that. Even so, it all seems small, but there are lines and lines of code in scripts, endpoints and automations to create the following flow:
 
@@ -53,7 +53,7 @@ As I mentioned, I built the frontend with **Next.js** and a **SQLite** base (bet
 * User panels to view your sites, make backups, and more.
 * Admin panel to manage deployments, resources and backups.  
   All actions:  
-  ![Sensei Dashboard](/public/posts/Pasted-image-20250331194504.png "Sensei Dashboard")
+  ![Sensei Dashboard](/public/posts/Pasted-image-20250331194504.webp "Sensei Dashboard")
 
 They are actually communications via HTTP to the Go API that lives on the same WordPress VPS. And this is run through the Next.js server - it is not a direct communication between the Sensei front end and the associated pool.
 

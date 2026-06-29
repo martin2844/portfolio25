@@ -1,8 +1,8 @@
 ---
-title: "From Next.js to PHP in 1 day (with AI) 🚀 140KB → 4KB"
+title: "From Next.js to PHP in 1 Day with AI"
 publishDate: "2025-08-25"
 slug: "from-nextjs-to-php-in-1-day-with-ai-140kb-4kb"
-excerpt: "I had my personal site in Next.js. It was fine, modern, all nice... but for a super simple page it was too much motor for so little bike. I got bit by the optimization bug and set myself a challenge: ..."
+excerpt: "I rebuilt my personal site from Next.js to PHP in one day using AI. The result: a 140KB bundle shrunk to 4KB and a much simpler stack."
 readingTime: 3
 tags: ["nextjs"]
 ---

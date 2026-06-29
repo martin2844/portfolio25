@@ -1,8 +1,8 @@
 ---
-title: "How to have your server at home - Homemade self hosting"
+title: "How to Build a Home Server for Self-Hosting"
 publishDate: "2025-05-04"
 slug: "how-to-have-your-server-at-home-homemade-self-hosting"
-excerpt: "Lately they have been writing to me a lot asking how I set up my “home datacenter”: what I use, how I keep it online and how I deal with the ISP. So I sat down to organize the entire idea, from end to..."
+excerpt: "A practical walkthrough of my home server setup: hardware, ISP tricks, services I run and how I keep everything online without breaking the bank."
 readingTime: 4
 tags: ["server", "self-hosting", "travel"]
 ---

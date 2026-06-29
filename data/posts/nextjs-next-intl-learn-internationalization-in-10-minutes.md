@@ -1,8 +1,8 @@
 ---
-title: "Next.js + next-intl - Learn Internationalization in 10 Minutes"
+title: "Next.js Internationalization in 10 Minutes"
 publishDate: "2025-01-06"
 slug: "nextjs-next-intl-learn-internationalization-in-10-minutes"
-excerpt: "Have you ever kicked the i18n for “later” and it ended up being left for never? It happened to me a thousand times. That's why I put together this short video where, in 10 minutes, I ready a Next.js a..."
+excerpt: "Stop postponing i18n. Here is a 10-minute walkthrough to set up next-intl in a Next.js app and keep translations organized from the start."
 readingTime: 3
 tags: ["nextjs"]
 ---

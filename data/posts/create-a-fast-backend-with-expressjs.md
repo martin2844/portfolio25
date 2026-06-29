@@ -2,7 +2,7 @@
 title: "Create a fast backend with ExpressJS"
 publishDate: "2024-07-27"
 slug: "create-a-fast-backend-with-expressjs"
-excerpt: "I started this video because many times we want to build a backend for an idea or an MVP and we get lost in giant “boilerplates”. Here I'm going to keep it simple: Pure Express, clear structure and mi..."
+excerpt: "Build a backend for your next MVP without getting lost in giant boilerplates. Pure Express, clear structure and minimal files that just work."
 readingTime: 3
 tags: ["docker"]
 ---

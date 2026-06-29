@@ -1,8 +1,8 @@
 ---
-title: "The browser that should have been an extension - ChatGPT Atlas"
+title: "ChatGPT Atlas: An AI Browser Review"
 publishDate: "2025-10-27"
 slug: "the-browser-that-should-have-been-an-extension-chatgpt-atlas"
-excerpt: "I came across ChatGPT Atlas, an “AI browser” that promises to change how we browse the web. Obviously, I was curious and tried it thoroughly. Spoiler: it could have been an extension and it's okay to ..."
+excerpt: "ChatGPT Atlas promises to change browsing, but it could have been a browser extension. My honest review after testing the AI browser."
 readingTime: 2
 tags: ["ai", "hardware"]
 ---

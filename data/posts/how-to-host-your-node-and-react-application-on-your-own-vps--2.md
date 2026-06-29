@@ -1,8 +1,8 @@
 ---
-title: "How to host your node and react application on your own VPS (2/2)"
+title: "Host Your Node + React App on a VPS (2/2)"
 publishDate: "2022-02-07"
 slug: "how-to-host-your-node-and-react-application-on-your-own-vps--2"
-excerpt: "How to host your Node + React app on your own VPS (2/2) In this second part we finish the deployment: we put free HTTPS with Let's Encrypt, we leave Nginx fine as a reverse proxy, we test the app live..."
+excerpt: "Finish the deployment with free HTTPS via Let's Encrypt, fine-tune Nginx and see the live app. Part 2 closes the VPS setup from Part 1."
 readingTime: 4
 tags: ["react", "nginx", "javascript", "nodejs", "server"]
 ---

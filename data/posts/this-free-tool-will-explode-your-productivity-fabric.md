@@ -1,8 +1,8 @@
 ---
-title: "This free tool will EXPLODE your productivity - Fabric"
+title: "Boost Productivity with Fabric AI"
 publishDate: "2024-09-06"
 slug: "this-free-tool-will-explode-your-productivity-fabric"
-excerpt: "Short and short: I was trying Fabric and it blew my mind. It is an open source tool that converts prompts and flows with AI into reusable “patterns” from the terminal. Zero smoke: you install it, give..."
+excerpt: "Fabric turns AI prompts into reusable terminal patterns. A quick introduction to installing it, using built-in patterns and making your own."
 readingTime: 3
 tags: ["nextjs", "docker"]
 ---

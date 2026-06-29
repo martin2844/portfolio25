@@ -1,8 +1,8 @@
 ---
-title: "Your first workflow in n8n (Discord + Cron) - 2"
+title: "First n8n Workflow: Discord + Cron"
 publishDate: "2025-11-20"
 slug: "your-first-workflow-in-n8n-discord-cron-2"
-excerpt: "Lately they have been asking me for something very practical from n8n, so I sat down with a mate and recorded this step by step so that you can build your first workflow from scratch. The idea is simp..."
+excerpt: "Build a practical n8n workflow from scratch using Discord notifications and a cron trigger. A beginner-friendly step-by-step tutorial."
 readingTime: 3
 tags: ["n8n"]
 ---

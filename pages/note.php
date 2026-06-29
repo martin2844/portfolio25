@@ -10,6 +10,8 @@ if (!$note) {
     $currentPage = 'notes';
     $pageTitle = '404 - Note Not Found';
     $pageDescription = 'The requested note could not be found.';
+    $noindex = true;
+    $omitCanonical = true;
     ob_start();
     ?>
     <div class="card message-card">
@@ -29,26 +31,37 @@ $pageDescription = $note['frontmatter']['excerpt'];
 $canonicalUrl = 'https://martinchammah.dev/notes/' . $note['frontmatter']['slug'];
 $ogType = 'article';
 $noteUrl = 'https://martinchammah.dev/notes/' . $note['frontmatter']['slug'];
+$coverImage = $note['frontmatter']['coverImage'] ?? null;
+$ogImage = absoluteUrl($coverImage) ?? 'https://martinchammah.dev/og-image.jpg';
+$schemaImage = absoluteUrl($coverImage) ?? absoluteUrl(firstContentImage($note['content'])) ?? null;
+$dateModified = $note['frontmatter']['modifiedDate'] ?? $note['frontmatter']['publishDate'];
+
+$article = [
+    '@type' => 'Article',
+    'headline' => $note['frontmatter']['title'],
+    'description' => $note['frontmatter']['excerpt'],
+    'datePublished' => $note['frontmatter']['publishDate'],
+    'dateModified' => $dateModified,
+    'author' => [
+        '@type' => 'Person',
+        'name' => 'Martin Chammah',
+        'url' => 'https://martinchammah.dev'
+    ],
+    'publisher' => [
+        '@type' => 'Person',
+        'name' => 'Martin Chammah'
+    ],
+    'url' => $noteUrl,
+    'keywords' => $note['frontmatter']['tags'] ?? []
+];
+if ($schemaImage) {
+    $article['image'] = $schemaImage;
+}
+
 $jsonLd = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        [
-            '@type' => 'Article',
-            'headline' => $note['frontmatter']['title'],
-            'description' => $note['frontmatter']['excerpt'],
-            'datePublished' => $note['frontmatter']['publishDate'],
-            'author' => [
-                '@type' => 'Person',
-                'name' => 'Martin Chammah',
-                'url' => 'https://martinchammah.dev'
-            ],
-            'publisher' => [
-                '@type' => 'Person',
-                'name' => 'Martin Chammah'
-            ],
-            'url' => $noteUrl,
-            'keywords' => $note['frontmatter']['tags'] ?? []
-        ],
+        $article,
         [
             '@type' => 'BreadcrumbList',
             'itemListElement' => [

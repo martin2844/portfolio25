@@ -1,8 +1,8 @@
 ---
-title: "Unboxing MacBook Air M4 for programming – and that keyboard?"
+title: "MacBook Air M4 Unboxing for Programming"
 publishDate: "2025-04-08"
 slug: "unboxing-macbook-air-m4-for-programming-and-that-keyboard"
-excerpt: "Today I gave myself the pleasure: I opened a MacBook Air M4 and brought it to the battle desk to see if it really is “the” computer for developers in 2025. I did a very simple unboxing and focused on ..."
+excerpt: "I unboxed a MacBook Air M4 and tested it on my programming desk. Thoughts on performance, ports and whether the keyboard lives up to the hype."
 readingTime: 3
 tags: ["docker"]
 ---

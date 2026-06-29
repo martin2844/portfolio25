@@ -2,7 +2,7 @@
 title: "From idea to app in 30 min | Next.js Hacks"
 publishDate: "2025-08-15"
 slug: "from-idea-to-app-in-30-min-nextjs-hacks"
-excerpt: "I started this mini-series because I'm always asked how I approach an MVP when I have little time and zero desire to get lost in perfection. In this first episode I set a timer for 30 minutes and deci..."
+excerpt: "Build an MVP in 30 minutes without getting lost in perfection. A look at my process for turning an idea into a working Next.js app fast."
 readingTime: 2
 tags: ["1"]
 ---

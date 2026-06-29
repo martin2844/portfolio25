@@ -10,6 +10,8 @@ if (!$post) {
     $currentPage = 'blog';
     $pageTitle = '404 - Post Not Found';
     $pageDescription = 'The requested blog post could not be found.';
+    $noindex = true;
+    $omitCanonical = true;
     ob_start();
     ?>
     <div class="card message-card">
@@ -30,26 +32,37 @@ $pageKeywords = 'Martin Chammah, ' . implode(', ', $post['frontmatter']['tags'] 
 $canonicalUrl = 'https://martinchammah.dev/blog/' . $post['frontmatter']['slug'];
 $ogType = 'article';
 $postUrl = 'https://martinchammah.dev/blog/' . $post['frontmatter']['slug'];
+$coverImage = $post['frontmatter']['coverImage'] ?? null;
+$ogImage = absoluteUrl($coverImage) ?? 'https://martinchammah.dev/og-image.jpg';
+$schemaImage = absoluteUrl($coverImage) ?? absoluteUrl(firstContentImage($post['content'])) ?? null;
+$dateModified = $post['frontmatter']['modifiedDate'] ?? $post['frontmatter']['publishDate'];
+
+$blogPosting = [
+    '@type' => 'BlogPosting',
+    'headline' => $post['frontmatter']['title'],
+    'description' => $post['frontmatter']['excerpt'],
+    'datePublished' => $post['frontmatter']['publishDate'],
+    'dateModified' => $dateModified,
+    'author' => [
+        '@type' => 'Person',
+        'name' => 'Martin Chammah',
+        'url' => 'https://martinchammah.dev'
+    ],
+    'publisher' => [
+        '@type' => 'Person',
+        'name' => 'Martin Chammah'
+    ],
+    'url' => $postUrl,
+    'keywords' => $post['frontmatter']['tags'] ?? []
+];
+if ($schemaImage) {
+    $blogPosting['image'] = $schemaImage;
+}
+
 $jsonLd = [
     '@context' => 'https://schema.org',
     '@graph' => [
-        [
-            '@type' => 'BlogPosting',
-            'headline' => $post['frontmatter']['title'],
-            'description' => $post['frontmatter']['excerpt'],
-            'datePublished' => $post['frontmatter']['publishDate'],
-            'author' => [
-                '@type' => 'Person',
-                'name' => 'Martin Chammah',
-                'url' => 'https://martinchammah.dev'
-            ],
-            'publisher' => [
-                '@type' => 'Person',
-                'name' => 'Martin Chammah'
-            ],
-            'url' => $postUrl,
-            'keywords' => $post['frontmatter']['tags'] ?? []
-        ],
+        $blogPosting,
         [
             '@type' => 'BreadcrumbList',
             'itemListElement' => [

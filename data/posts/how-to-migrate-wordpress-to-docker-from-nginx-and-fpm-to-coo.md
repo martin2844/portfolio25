@@ -1,8 +1,8 @@
 ---
-title: "How to migrate wordpress to docker - From NGINX and FPM to Coolify"
+title: "Migrate WordPress from NGINX-FPM to Coolify"
 publishDate: "2024-12-02"
 slug: "how-to-migrate-wordpress-to-docker-from-nginx-and-fpm-to-coo"
-excerpt: "For a while now I have been migrating things to Docker to have neater and more replicable deployments. I had a WordPress that ran on a VPS with NGINX + PHP-FPM, and I was interested in moving it to Co..."
+excerpt: "Move an existing WordPress site from NGINX + PHP-FPM to a Docker setup on Coolify. A practical migration with database, files and DNS steps."
 readingTime: 4
 tags: ["wordpress", "docker"]
 ---

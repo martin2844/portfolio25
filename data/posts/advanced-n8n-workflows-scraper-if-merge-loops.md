@@ -1,8 +1,8 @@
 ---
-title: "Advanced n8n workflows - scraper, IF, merge, loops"
+title: "n8n Advanced Workflows: Scraper to Loops"
 publishDate: "2025-11-21"
 slug: "advanced-n8n-workflows-scraper-if-merge-loops"
-excerpt: "In this video I went deep into n8n in “level 2” mode: e-commerce scraping, conditionals with IFs, merges to join branches, loops for pagination and handling of multiple items without everything explod..."
+excerpt: "Level up n8n with real automation patterns: e-commerce scraping, IF branches, merge nodes and loops for pagination without everything exploding."
 readingTime: 3
 tags: ["n8n"]
 ---

@@ -1,15 +1,15 @@
 ---
-title: "Server in NodeJs with Express"
+title: "First Node.js Server with Express"
 publishDate: "2021-01-08"
 slug: "server-in-nodejs-with-express"
-excerpt: "In this tutorial you will learn how to set up your first local web server using NodeJS and Express. It is very simple and fast, but it is also very useful. In less than 15 minutes you will have a serv..."
+excerpt: "Set up your first local web server with Node.js and Express in under 15 minutes. A beginner-friendly guide with code and a video walkthrough."
 readingTime: 1
 tags: ["javascript", "nodejs", "express", "server"]
 ---
 
 In this tutorial you will learn how to set up your first local web server using NodeJS and Express. It is very simple and fast, but it is also very useful. In less than 15 minutes you will have a server running locally, serving all your html files and more.
 
-### How to make a server in less than 15 minutes.
+## How to make a server in less than 15 minutes.
 
 1. Download NodeJs, from [nodejs](https://nodejs.org/en/), you must download the recommended version for all users, simply to make sure that no errors occur because the version does not yet have full support.
 2. Check that it was installed correctly by running the following from the command console:

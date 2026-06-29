@@ -1,14 +1,14 @@
 ---
-title: "Roman Numerals"
+title: "Roman Numerals to Integer in JavaScript"
 publishDate: "2024-10-26T12:00:00Z"
-excerpt: "A fun problem to practice general logic and problem solving."
+excerpt: "Convert Roman numerals like III or IX to integers in JavaScript. A fun logic problem that rewards careful step-by-step thinking."
 coverImage: "https://cloud.codigomate.com/c9ucli.jpg"
 readingTime: 2
 tags: ["leetcode", "javascript"]
 slug: "roman-numerals-js"
 ---
 
-# Roman Numerals
+## Roman Numerals
 
 The problem is to convert a Roman numeral to an integer. You get a string like "III" and you need to return 3.
 You know roman numerals right? Essentially, they are a numeral system originating in ancient Rome that uses letters to represent numbers.
@@ -131,7 +131,7 @@ But still, I think its more readable and easier to understand the first approach
 
 Submitting this to leetcode, we get the following results:
 
-![Roman numerals js](https://cloud.codigomate.com/0atukf.png)
+![Roman numerals js](https://cloud.codigomate.com/0atukf.webp)
 
 Not really sure how you would get less performance than that, like it seems the majority of people got right on the middle, which takes 100ms. This one takes 6ms.
 

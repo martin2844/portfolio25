@@ -1,8 +1,8 @@
 ---
-title: "5 things you have to do in 2026 to avoid leaving your server exposed."
+title: "5 Server Security Tasks for 2026"
 publishDate: "2025-12-27"
 slug: "5-things-you-have-to-do-in-2026-to-avoid-leaving-your-server"
-excerpt: "Lately I have received several messages like “they opened my VPS” or “they entered me via SSH and I don't know how.” I'm not going to sell you smoke: if you self-host, basic security is not optional. ..."
+excerpt: "Basic security is not optional when you self-host. Here are five practical tasks I set up on every new server to avoid the classic 'they got in via SSH' moment."
 readingTime: 3
 tags: ["SelfHosting", "Security"]
 ---

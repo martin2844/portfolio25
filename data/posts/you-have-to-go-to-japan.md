@@ -1,11 +1,12 @@
 ---
-title: "You have to go to Japan"
+title: "Why Japan Is a Must-Visit Destination"
 publishDate: "2025-08-01"
 slug: "you-have-to-go-to-japan"
-excerpt: "Una de las buenas cosas de estar en europa es estar cerca de muchos destinos. Uno idealiza que se muda, y va estar buscando gangas para viajar, pasajes a 50 euros y todo eso. Pero en mi caso no termin..."
+excerpt: "A love letter to Japan from someone who does not even like sushi. Tips, cities, food, cars and why it became my favorite trip so far."
 readingTime: 9
 tags: ["mac", "travel"]
 ---
+## Why Japan Is a Must-Visit Destination
 
 Una de las buenas cosas de estar en europa es estar cerca de muchos destinos. Uno idealiza que se muda, y va estar buscando gangas para viajar, pasajes a 50 euros y todo eso. Pero en mi caso no termina sucediendo por varios motivos.
 

@@ -1,8 +1,8 @@
 ---
-title: "Open bank account in the USA"
+title: "How to Open a US Bank Account Remotely"
 publishDate: "2023-05-20"
 slug: "open-bank-account-in-the-usa"
-excerpt: "As I mentioned in the post on how to start collecting in USD, the next step after using Payoneer is to open a bank account in the United States. This is based on my opinion, and as I already establish..."
+excerpt: "The next step after Payoneer is a real US bank account. What I learned about opening one remotely and why it beats relying only on fintech apps."
 readingTime: 10
 tags: ["travel", "finance"]
 ---

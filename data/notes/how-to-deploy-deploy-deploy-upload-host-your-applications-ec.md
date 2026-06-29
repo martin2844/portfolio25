@@ -1,11 +1,12 @@
 ---
-title: "How to deploy (deploy, deploy, upload, host) your applications economically and why."
+title: "Why a VPS Portfolio Beats Free Hosting"
 publishDate: "2023-05-20"
 slug: "how-to-deploy-deploy-deploy-upload-host-your-applications-ec"
-excerpt: "There is a lot of talk about how to get your first job in IT, or in programming. The reality is that today it is not so easy. With the popularization of short courses and bootcamps, the market is a bi..."
+excerpt: "Free hosting is fine for front-end demos, but a VPS lets you show full-stack apps, APIs and WordPress sites on your own domain. Here is why it matters."
 readingTime: 2
 tags: ["wordpress"]
 ---
+## Why a VPS Portfolio Beats Free Hosting
 
 There is a lot of talk about how to get your first job in IT, or in programming. The reality is that today it is not so easy. With the popularization of short courses and bootcamps, the market is a bit saturated with people looking for entry level jobs.
 

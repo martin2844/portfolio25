@@ -1,14 +1,14 @@
 ---
-title: "Two Sum"
+title: "Solving the Two Sum Problem in JavaScript"
 publishDate: "2024-10-23T17:00:00Z"
-excerpt: "My first attempt at leet code, and it was a mess, well not really right?."
+excerpt: "My first LeetCode problem started as a naive O(n²) mess and ended with a hash map. A walkthrough of the mistakes and the final O(n) solution."
 coverImage: "https://cloud.codigomate.com/c9ucli.jpg"
 readingTime: 6
 tags: ["leetcode", "javascript"]
 slug: "two-sum"
 ---
 
-# Two Sum
+## Two Sum
 
 So Im finishing up my degree on CS, and realized I've never proper done leet code.
 Of course I know programming, I've been doing it for over 5 years now, but what about leet code stuff?
@@ -72,7 +72,7 @@ var twoSum = function(nums, target) {
 
 Also the returns there struck me wrong somehow, they dont feel really neat.
 These were the results:
-![naive two sum](https://cloud.codigomate.com/hrrenw.png)
+![naive two sum](https://cloud.codigomate.com/hrrenw.webp)
 
 Second iteration, I went to the drawing board. Literally got a pen and paper and thought about the problem.
 We could at least use i as a pointer, and split the array into two, so that we start always from the next element of i, instead of the beginning of the array. This should save some time right?
@@ -106,7 +106,7 @@ var twoSum = function(nums, target) {
 
 So now, we improved but still very weak, still at O(n^2) and space O(1).
 
-![second two sum](https://cloud.codigomate.com/vkpva4.png)
+![second two sum](https://cloud.codigomate.com/vkpva4.webp)
 
 More intense staring at my drawings....
 so then I remembered the memes --- use a hash map. Its actually brilliant. How can I fit a hashmap to my design lol?
@@ -166,7 +166,7 @@ var twoSum = function(nums, target) {
 
 With the correct answer:
 
-![third two sum](https://cloud.codigomate.com/po8fse.png)
+![third two sum](https://cloud.codigomate.com/po8fse.webp)
 
 Beats 96.95% of the answers, good for me, for my first leet code problem I guess...
 Time complexity is O(n) and space is O(n).

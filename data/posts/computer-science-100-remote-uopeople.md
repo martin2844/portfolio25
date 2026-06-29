@@ -2,7 +2,7 @@
 title: "Computer Science 100% remote - uopeople"
 publishDate: "2025-03-25"
 slug: "computer-science-100-remote-uopeople"
-excerpt: "I already enrolled in UoPeople and I put together this video to tell you, without fuss, how it works to study CS 100% online there: requirements, costs, courses, validity of the degree, calendar and e..."
+excerpt: "A no-fuss look at studying Computer Science 100% online with UoPeople: requirements, costs, courses, degree validity and what the calendar looks like."
 readingTime: 3
 tags: ["finance"]
 ---

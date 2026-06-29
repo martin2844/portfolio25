@@ -2,7 +2,7 @@
 title: "How to order the Wise card from Argentina"
 publishDate: "2023-05-20"
 slug: "how-to-order-the-wise-card-from-argentina"
-excerpt: "Well, it used to be said that the easiest way to request the WISE card is to change the address in EUROPE to that of a friend who lives there and that's it. Wise, if you have an address in Argentina i..."
+excerpt: "Ordering a Wise card from Argentina used to require a European address. Here is how I got mine and what to expect from the process."
 readingTime: 2
 tags: ["travel", "finance"]
 ---

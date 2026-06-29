@@ -1,8 +1,8 @@
 ---
-title: "Deploy with Docker and Ubuntu in 5 minutes (and more) - Nginx and Certbot"
+title: "Deploy Docker on Ubuntu with Nginx and SSL"
 publishDate: "2024-09-21"
 slug: "deploy-with-docker-and-ubuntu-in-5-minutes-and-more-nginx-an"
-excerpt: "Today I bring you a super practical step by step so that you have a VPS with Ubuntu ready to receive your app in containers, served by Nginx and with SSL from Let's Encrypt. I put it together because ..."
+excerpt: "Step-by-step guide to get an Ubuntu VPS ready for containerized apps, served by Nginx with free SSL from Let's Encrypt. No magic, just commands."
 readingTime: 3
 tags: ["docker"]
 ---

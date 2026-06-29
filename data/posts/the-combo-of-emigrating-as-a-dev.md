@@ -2,7 +2,7 @@
 title: "The combo of emigrating as a dev"
 publishDate: "2025-01-24"
 slug: "the-combo-of-emigrating-as-a-dev"
-excerpt: "(cover photo: Having coffee in Ghirardelli Square, San Francisco) I made it a goal to write a little every day, at least 500 words. I think that writing and creating non-GPT content (what is the name ..."
+excerpt: "A dev's notes on emigrating, writing daily and building a life abroad. Reflections from San Francisco on work, discipline and starting over."
 readingTime: 7
 tags: ["express", "ai", "travel", "finance"]
 ---

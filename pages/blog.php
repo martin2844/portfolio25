@@ -11,7 +11,9 @@ $day = isset($_GET['day']) ? (int)$_GET['day'] : null;
 $currentPage = 'blog';
 $pageTitle = 'Blog';
 $pageDescription = 'Blog posts by Martin Chammah on TypeScript, Next.js, SQL, Go, and software engineering.';
+$canonicalUrl = 'https://martinchammah.dev/blog';
 $noindex = false;
+$omitCanonical = false;
 
 $allPosts = DataLoader::getPosts();
 $filteredPosts = $allPosts;
@@ -49,6 +51,8 @@ if ($query !== '') {
     $pageDescription = $resultsLabel;
     $noindex = true;
 }
+
+$omitCanonical = $noindex;
 
 $archive = DataLoader::getArchiveMonths('posts');
 $allTags = DataLoader::getAllTags('posts');

@@ -1,8 +1,8 @@
 ---
-title: "How to start charging in USD"
+title: "How to Start Charging Clients in USD"
 publishDate: "2023-05-19"
 slug: "how-to-start-charging-in-usd"
-excerpt: "The start: Finding the contractor job You already found that contracting job, you finally made the leap into the void, which gives so much uncertainty, but ultimately you are ready to get paid in USD...."
+excerpt: "You got a contractor job and now you need to get paid in USD from Argentina. A practical guide to invoices, payment methods and keeping things legal."
 readingTime: 3
 tags: ["travel", "finance"]
 ---

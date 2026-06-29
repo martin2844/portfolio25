@@ -10,7 +10,7 @@ skills: ["TypeScript", "Next.js", "Go", "SQL"]
 interests: ["AI tools", "Cars", "Software"]
 ---
 
-# About Martin
+## About Martin
 
 Hello, I'm Martin! I'm a full stack developer based in Barcelona, Spain. I'm proficient in Javascript, I love bending Nextjs coupled with Sqlite and thinking about what non conventional stuff I can do with it. Professionally, I daily drive mostly Typescript, SQL but I've got no issues touching other codebases, which I frequently do, mainly Go and Ruby. I'm not picky, and always up for a challenge so bring on your stacks and let's work together to build something awesome!
 

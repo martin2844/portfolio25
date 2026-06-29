@@ -2,7 +2,7 @@
 title: "5 Apps that I ALWAYS install on all my macs"
 publishDate: "2025-06-08"
 slug: "5-apps-that-i-always-install-on-all-my-macs"
-excerpt: "Every time I start a Mac from scratch I have a ritual: I grab a mate, open the checklist and start installing these five apps. They are not “cool apps” to fill out, they are the ones that save my day ..."
+excerpt: "Every time I start a Mac from scratch I install these five apps. They are not filler; they are the ones that save my day-to-day workflow."
 readingTime: 4
 tags: ["docker"]
 ---

@@ -1,8 +1,8 @@
 ---
-title: "I stopped deleting silences by hand and created this tool"
+title: "Auto-Cut Video Silences with This Tool"
 publishDate: "2025-12-31"
 slug: "i-stopped-deleting-silences-by-hand-and-created-this-tool"
-excerpt: "Editing long videos was eating my life away. Between marking cuts, reducing silences, and zooming in on the timeline, I could waste hours on the most boring part of the process. So I got stubborn abou..."
+excerpt: "I built a tool that removes silences from videos automatically instead of cutting them by hand. A quick look at how it works and why I needed it."
 readingTime: 2
 tags: ["electron", "js", "ffmpeg"]
 ---

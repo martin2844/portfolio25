@@ -1,15 +1,15 @@
 ---
-title: "Your first PHP server"
+title: "Build Your First PHP Server from Scratch"
 publishDate: "2021-01-08"
 slug: "your-first-php-server"
-excerpt: "PHP is a language that has been around since 1995, just like JAVASCRIPT. But for servers it has been used for a long time. That is why today it is still very important.  Getting started! How to start?..."
+excerpt: "PHP is still everywhere on the web. This note walks you through starting your first PHP server, from installation to serving your first page."
 readingTime: 1
 tags: ["php", "javascript", "server"]
 ---
 
 PHP is a language that has been around since 1995, just like JAVASCRIPT. But for servers it has been used for a long time. That is why today it is still very important.
 
-# Getting started!
+## Getting started!
 
 How to start?
 
@@ -19,7 +19,7 @@ How to start?
 4. Download thread safe zip file for our operating system version, in my case x64.
 5. Extract all the contents of the zip to C:\php.
 6. Add the PATH variable to windows.  
-   ![Enviroment Variables](/public/posts/1.png)
+   ![Enviroment Variables](/public/posts/1.webp)
 7. Go to environment variables.
 8. Click on PATH, and add NEW with address in C:\php.
 9. open CMD and test if PHP works, with the php-v command
@@ -28,10 +28,10 @@ How to start?
 12. The default path will be C:\Users(yourUserName)
 13. There create a folder called www. and inside it a .PHP file, like site.php.
 14. Let's make some simple lines, to test.  
-    ![PHP TEST](/public/posts/2.png)
+    ![PHP TEST](/public/posts/2.webp)
 15. Go in the browser to <http://localhost:4000/www/site.php>
 16. We should see the following:  
-    ![PHP TEST](/public/posts/3.png)
+    ![PHP TEST](/public/posts/3.webp)
 
 The server is already working!
 

@@ -1,8 +1,8 @@
 ---
-title: "This is how I built a home server with a €97 mini PC"
+title: "I Built a Home Server with a €97 Mini PC"
 publishDate: "2025-05-11"
 slug: "this-is-how-i-built-a-home-server-with-a-97-mini-pc"
-excerpt: "A while ago I wanted to try if with very little money you could build a decent home server. I came across a mini PC for €97 and said: done, challenge accepted. In this video I decided to turn it into ..."
+excerpt: "Can you build a decent home server for under €100? I tried it with a €97 mini PC and documented the hardware, setup and real-world use."
 readingTime: 3
 tags: ["docker"]
 ---

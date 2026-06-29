@@ -1,8 +1,8 @@
 ---
-title: "I made an app… and now people all over the world use it (but no one pays)"
+title: "I Built a Silence Remover (No One Pays)"
 publishDate: "2026-03-26"
 slug: "i-made-an-app-and-now-people-all-over-the-world-use-it-but-n"
-excerpt: "A while ago I was bitten by the bug to put together a tool for a very specific pain: removing silences from videos without having to open a heavy editor. I started with a small script in ffmpeg, I pre..."
+excerpt: "I turned a small ffmpeg script into a desktop app that removes silences from videos. People around the world use it, but almost nobody pays."
 readingTime: 4
 tags: ["javascript", "ai", "mac", "finance"]
 ---

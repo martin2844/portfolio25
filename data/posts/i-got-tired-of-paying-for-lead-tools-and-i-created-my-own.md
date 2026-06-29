@@ -1,8 +1,8 @@
 ---
-title: "I got tired of paying for lead tools and I created my own"
+title: "I Built My Own Lead Generation Tool"
 publishDate: "2025-12-23"
 slug: "i-got-tired-of-paying-for-lead-tools-and-i-created-my-own"
-excerpt: "Desde hace meses vengo renegando con las herramientas de lead generation. Te prometen oro, pero entre planes “Pro”, límites raros y features bloqueadas, terminás pagando cada mes sin tener control rea..."
+excerpt: "Lead tools keep raising prices and hiding features behind Pro plans. I got tired of it and built my own lead scraper to stay in control."
 readingTime: 4
 tags: ["buildinpublic", "automation", "n8n", "indiehacker", "saas"]
 ---

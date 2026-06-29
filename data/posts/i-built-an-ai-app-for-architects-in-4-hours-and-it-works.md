@@ -1,8 +1,8 @@
 ---
-title: "I built an AI app for architects in 4 hours (and it works!)"
+title: "I Built an AI App for Architects in 4 Hours"
 publishDate: "2025-04-26"
 slug: "i-built-an-ai-app-for-architects-in-4-hours-and-it-works"
-excerpt: "I set a 4-hour timer, prepared a mate, and challenged myself: can I build a full-stack app that generates images with AI for architecture students, from end to end, in one afternoon? I loved the idea ..."
+excerpt: "A 4-hour challenge to build a full-stack app that generates AI renders for architecture students. From idea to a working prototype in one afternoon."
 readingTime: 3
 tags: ["nextjs", "sqlite"]
 ---

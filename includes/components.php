@@ -258,7 +258,15 @@ function render_project_card($props) {
         $html .= '<span class="project-number">' . str_pad($index + 1, 2, '0', STR_PAD_LEFT) . '</span>';
     }
     if ($image) {
-        $html .= '<div class="project-image"><img src="' . htmlspecialchars($image) . '" alt="' . htmlspecialchars($name) . '" width="1200" height="630" ' . $loadingAttr . '></div>';
+        $dims = '';
+        $localImage = __DIR__ . '/..' . $image;
+        if (file_exists($localImage)) {
+            $size = @getimagesize($localImage);
+            if ($size) {
+                $dims = ' width="' . (int)$size[0] . '" height="' . (int)$size[1] . '"';
+            }
+        }
+        $html .= '<div class="project-image"><img src="' . htmlspecialchars($image) . '" alt="' . htmlspecialchars($name) . '"' . $dims . ' ' . $loadingAttr . '></div>';
     }
     $html .= '<h3>' . htmlspecialchars($name) . '</h3>';
     $html .= '<p>' . htmlspecialchars($desc) . '</p>';
@@ -276,7 +284,7 @@ function render_project_card($props) {
 
 function render_experience_item($props) {
     $exp = $props['item'];
-    $html = '<h4>' . htmlspecialchars($exp['position'] ?? '') . '</h4>';
+    $html = '<h3>' . htmlspecialchars($exp['position'] ?? '') . '</h3>';
     $html .= '<div class="meta">' . htmlspecialchars($exp['company'] ?? '') . ' • ' . htmlspecialchars($exp['period'] ?? '') . '</div>';
     if (!empty($exp['description'])) {
         $html .= '<p>' . htmlspecialchars($exp['description']) . '</p>';
@@ -286,7 +294,7 @@ function render_experience_item($props) {
 
 function render_education_item($props) {
     $edu = $props['item'];
-    $html = '<h4>' . htmlspecialchars($edu['degree'] ?? '') . '</h4>';
+    $html = '<h3>' . htmlspecialchars($edu['degree'] ?? '') . '</h3>';
     $html .= '<div class="meta">' . htmlspecialchars($edu['institution'] ?? '') . ' • ' . htmlspecialchars($edu['period'] ?? '') . '</div>';
     if (!empty($edu['status'])) {
         $html .= '<div class="status">' . htmlspecialchars($edu['status']) . '</div>';
@@ -297,7 +305,7 @@ function render_education_item($props) {
 function render_skill_category($props) {
     $title = $props['title'] ?? '';
     $skills = $props['skills'] ?? [];
-    $html = '<h4>' . htmlspecialchars(ucfirst($title)) . '</h4>';
+    $html = '<h3>' . htmlspecialchars(ucfirst($title)) . '</h3>';
     $html .= render_tag_list($skills);
     return '<div class="skill-category">' . $html . '</div>';
 }

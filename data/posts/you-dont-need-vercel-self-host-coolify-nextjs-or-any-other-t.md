@@ -1,8 +1,8 @@
 ---
-title: "You don't need Vercel! Self-Host Coolify + Nextjs (or any other tech) in 5 minutes and more!"
+title: "Self-Host Next.js on Coolify in 5 Minutes"
 publishDate: "2024-10-04"
 slug: "you-dont-need-vercel-self-host-coolify-nextjs-or-any-other-t"
-excerpt: "Lately I have been hearing a lot “without Vercel you can't deploy Next.js”. Post: there is no vendor lock-in. If you want, you can self-host it on a VPS and that's it. In this video I show you how to ..."
+excerpt: "You do not need Vercel to deploy Next.js. Here is how to self-host it on a VPS with Coolify, step by step, in about five minutes."
 readingTime: 3
 tags: ["nextjs", "docker"]
 ---

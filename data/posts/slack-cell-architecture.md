@@ -1,8 +1,8 @@
 ---
-title: "Slack Cell Architecture"
+title: "Slack Cell Architecture Explained"
 publishDate: "2023-08-26"
 slug: "slack-cell-architecture"
-excerpt: "The architecture of slack cells, I found this article very interesting because it talks about a fairly complex problem that slack had. It all starts from the promise they have that in a year Slack can..."
+excerpt: "How Slack scaled its architecture with cells to keep performance promises. A summary of the problem, the idea and what makes it interesting."
 readingTime: 8
 tags: ["server"]
 ---

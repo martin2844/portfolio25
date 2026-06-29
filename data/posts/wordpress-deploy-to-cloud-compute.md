@@ -2,10 +2,11 @@
 title: "WordPress Deploy to Cloud Compute"
 publishDate: "2023-05-20"
 slug: "wordpress-deploy-to-cloud-compute"
-excerpt: "After doing a lot of research, there isn't really a good solution for free WordPress hosting.   Really everyone has a con, or they don't allow you SSL Well, there is an answer to this. Since there are..."
+excerpt: "Host WordPress for free on Google Cloud Compute or AWS. A step-by-step guide to set up a LAMP stack and get WordPress running on your own VM."
 readingTime: 6
 tags: ["wordpress"]
 ---
+## WordPress Deploy to Cloud Compute
 
 After doing a lot of research, there isn't really a good solution for free WordPress hosting.  
 Really everyone has a con, or they don't allow you SSL

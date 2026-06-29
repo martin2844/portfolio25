@@ -1,8 +1,8 @@
 ---
-title: "How to host your node and react application on your own VPS (1/2)"
+title: "Host Your Node + React App on a VPS (1/2)"
 publishDate: "2021-11-05"
 slug: "how-to-host-your-node-and-react-application-on-your-own-vps-"
-excerpt: "How to host your Node + React app on your own VPS (Part 1) In this video I proposed something that several had been asking me for: building a full stack app (Node + React + Mongo) on my own VPS, witho..."
+excerpt: "Deploy a full-stack Node, React and Mongo app on your own VPS. Part 1 covers Ubuntu, Nginx, PM2 and the reverse proxy setup."
 readingTime: 4
 tags: ["docker"]
 ---

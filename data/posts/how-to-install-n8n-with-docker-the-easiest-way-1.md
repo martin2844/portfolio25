@@ -1,8 +1,8 @@
 ---
-title: "How to install n8n with Docker (the easiest way) - 1"
+title: "Install n8n with Docker the Easy Way"
 publishDate: "2025-11-19"
 slug: "how-to-install-n8n-with-docker-the-easiest-way-1"
-excerpt: "I had been receiving many questions like: “Hey, how do I start with n8n without breaking anything on my machine?” So I started recording the simplest and fastest way: Docker. Seriously, in two command..."
+excerpt: "Start with n8n without breaking your machine. Two Docker commands are enough to have a local workflow automation server up and running."
 readingTime: 3
 tags: ["docker", "n8n"]
 ---

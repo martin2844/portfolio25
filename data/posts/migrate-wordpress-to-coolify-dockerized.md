@@ -1,13 +1,13 @@
 ---
 title: "Migrate NGINX & PHP-FPM to Coolify"
 publishDate: "2024-11-04T14:00:00Z"
-excerpt: "A step by step guide on how I migrated my Wordpress from NGINX and PHP-FPM to Coolify"
+excerpt: "A step-by-step migration of a WordPress site from NGINX + PHP-FPM to Coolify, covering the database, files, permissions and DNS cutover."
 readingTime: 8
 tags: ["wordpress", "coolify", "docker", "self-hosting"]
 slug: "migrate-wordpress-to-coolify-dockerized"
 ---
 
-# Migrate NGINX & PHP-FPM to Coolify
+## Migrate NGINX & PHP-FPM to Coolify
 
 ### Setup a new wordpress instance with Mariadb
 

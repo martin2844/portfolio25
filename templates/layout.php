@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= isset($pageTitle) ? e($pageTitle) . ' | ' : '' ?>Martin Chammah | Software Engineer</title>
+    <title><?= isset($pageTitle) ? e($pageTitle) . ' | ' : '' ?>Martin Chammah</title>
     <meta name="description" content="<?= e($pageDescription ?? 'Full stack software engineer skilled in TypeScript, Next.js, SQL, and Go. Barcelona, Spain.') ?>">
     <meta name="author" content="Martin Chammah">
     <meta name="robots" content="<?= !empty($noindex) ? 'noindex, follow' : 'index, follow' ?>">
@@ -26,7 +26,12 @@
     <meta property="twitter:image" content="<?= e($ogImage ?? 'https://martinchammah.dev/og-image.jpg') ?>">
 
     <!-- Canonical URL -->
+    <?php if (!isset($omitCanonical) || $omitCanonical === false): ?>
     <link rel="canonical" href="<?= e($canonicalUrl ?? 'https://martinchammah.dev' . $_SERVER['REQUEST_URI']) ?>">
+    <?php endif; ?>
+
+    <!-- RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="Martin Chammah" href="https://martinchammah.dev/rss.xml">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/public/icon.svg">

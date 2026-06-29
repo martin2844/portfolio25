@@ -1,8 +1,8 @@
 ---
-title: "Claude Code for only 3 USD"
+title: "Use Claude Code for Only $3 per Month"
 publishDate: "2025-10-18"
 slug: "claude-code-for-only-3-usd"
-excerpt: "Lately I've been using Claude Code a lot to code faster, but the official subscription hits your pocket. So I started to test if there was a legal way to pay less… and yes: with the z.ai API you can u..."
+excerpt: "Claude Code is great but the subscription adds up. Here is a legal way to use the z.ai API and bring the cost down to roughly $3 a month."
 readingTime: 3
 tags: ["ai", "finance"]
 ---

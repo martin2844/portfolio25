@@ -1,8 +1,8 @@
 ---
-title: "This stack supports 1500 users on a 4 USD VPS"
+title: "Stack for 1500 Users on a $4 VPS"
 publishDate: "2025-04-20"
 slug: "this-stack-supports-1500-users-on-a-4-usd-vps"
-excerpt: "For a while now I have been testing simple combinations to deploy without selling a penny on platforms. In the new video I show the stack that I have been using in production for real projects and tha..."
+excerpt: "The simple stack I use in production that handles 1,500 users on a $4 VPS. No expensive platforms, just tools that work and scale quietly."
 readingTime: 2
 tags: ["nextjs", "sqlite"]
 ---

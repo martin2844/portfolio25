@@ -38,6 +38,11 @@ switch ($uri) {
         require __DIR__ . '/pages/sitemap.php';
         break;
 
+    case '/rss.xml':
+    case '/feed.xml':
+        require __DIR__ . '/pages/rss.php';
+        break;
+
     default:
         // Check for blog posts
         if (preg_match('#^/blog/([a-z0-9-]+)$#', $uri, $matches)) {
@@ -57,6 +62,8 @@ switch ($uri) {
         header('HTTP/1.0 404 Not Found');
         $currentPage = '';
         $pageTitle = '404 - Page Not Found';
+        $noindex = true;
+        $omitCanonical = true;
         $content = '<div class="card"><h2>Page not found</h2><p>The requested page could not be found.</p><a href="/" class="link">← Back to home</a></div>';
         require __DIR__ . '/templates/layout.php';
         break;

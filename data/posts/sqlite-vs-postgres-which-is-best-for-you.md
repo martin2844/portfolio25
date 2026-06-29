@@ -1,8 +1,8 @@
 ---
-title: "Sqlite vs Postgres - Which is best for you? -"
+title: "SQLite vs Postgres: Which Is Best for You?"
 publishDate: "2024-10-09"
 slug: "sqlite-vs-postgres-which-is-best-for-you"
-excerpt: "Every time I show a new project the same question appears: “Do I use SQLite or Postgres?” And yes… the easy answer is “it depends”, but I wanted to go further and measure it in real scenarios. In this..."
+excerpt: "SQLite or Postgres? I measured both in real scenarios to move past 'it depends'. A practical guide to picking the right database for your project."
 readingTime: 4
 tags: ["sqlite", "postgres", "sql"]
 ---

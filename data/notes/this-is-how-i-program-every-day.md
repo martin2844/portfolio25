@@ -2,7 +2,7 @@
 title: "This is how I program every day"
 publishDate: "2025-07-31"
 slug: "this-is-how-i-program-every-day"
-excerpt: "Lately they have been asking me to show a little more “behind the scenes” of how I work. So I recorded a quick look at my office and my daily routine when I sit elbows from home. Nothing epic: matte, ..."
+excerpt: "A peek into my daily programming routine: mate, simple tools, deep work and the small habits that keep me productive working from home."
 readingTime: 2
 tags: ["homeoffice", "javascript"]
 ---

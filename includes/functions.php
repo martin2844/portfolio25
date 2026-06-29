@@ -82,12 +82,39 @@ class MarkdownParser {
             return '<code>' . htmlspecialchars($content) . '</code>';
         }, $markdown);
         
-        // Images
-        $markdown = preg_replace('/!\[([^\]]*)\]\(([^)]+)\)/', '<img src="$2" alt="$1">', $markdown);
-        
+        // Images (lazy-loaded with real dimensions when available)
+        $markdown = preg_replace_callback('/!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/', function($matches) {
+            $alt = $matches[1];
+            $src = $matches[2];
+            $title = $matches[3] ?? '';
+
+            $attrs = 'src="' . e($src) . '" alt="' . e($alt) . '"';
+            if ($title !== '') {
+                $attrs .= ' title="' . e($title) . '"';
+            }
+
+            $localPath = '';
+            if (strpos($src, '/') === 0) {
+                $localPath = __DIR__ . '/..' . $src;
+            }
+            if ($localPath && file_exists($localPath)) {
+                $size = @getimagesize($localPath);
+                if ($size) {
+                    $attrs .= ' width="' . (int)$size[0] . '" height="' . (int)$size[1] . '"';
+                }
+            }
+
+            $attrs .= ' loading="lazy"';
+            return '<img ' . $attrs . '>';
+        }, $markdown);
+
+        // Autolinks: [text](<url>) and <https://example.com>
+        $markdown = preg_replace('/\[([^\]]+)\]\(<([^>]+)>\)/', '<a href="$2">$1</a>', $markdown);
+        $markdown = preg_replace('/<((https?:\/\/|mailto:)[^>]+)>/i', '<a href="$1">$1</a>', $markdown);
+
         // Links
         $markdown = preg_replace('/\[([^\]]+)\]\(([^)]+)\)/', '<a href="$2">$1</a>', $markdown);
-        
+
         // Bold
         $markdown = preg_replace('/\*\*(.*?)\*\*/', '<strong>$1</strong>', $markdown);
         
@@ -489,4 +516,19 @@ function formatDate($date) {
 function excerpt($text, $length = 200) {
     if (strlen($text) <= $length) return $text;
     return substr($text, 0, $length) . '...';
+}
+
+function absoluteUrl($url) {
+    if (empty($url)) return null;
+    if (preg_match('#^https?://#i', $url)) return $url;
+    if (strpos($url, '//') === 0) return 'https:' . $url;
+    if (strpos($url, '/') !== 0) $url = '/' . $url;
+    return 'https://martinchammah.dev' . $url;
+}
+
+function firstContentImage($html) {
+    if (preg_match('/<img[^>]+src=["\']([^"\']+)["\']/i', $html, $matches)) {
+        return $matches[1];
+    }
+    return null;
 }

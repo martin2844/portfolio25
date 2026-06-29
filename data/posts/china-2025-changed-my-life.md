@@ -1,13 +1,13 @@
 ---
-title: "China 2025 changed my life"
+title: "China 2025 Changed My Life: A Travel Story"
 publishDate: "2026-01-19"
 slug: "china-2025-changed-my-life"
-excerpt: "A chronological brain dump, with real tips and real experience How difficult to start talking about my trip to China. There is too much to tell.   This is a chronological account of my trip in Septemb..."
+excerpt: "A chronological brain dump of my 2025 trip to China, with real tips on apps, payments, transport and the honest experience of traveling there as a Westerner."
 readingTime: 30
 tags: ["express", "ai", "mac", "travel"]
 ---
 
-### A chronological brain dump, with real tips and real experience
+## A chronological brain dump, with real tips and real experience
 
 How difficult to start talking about my trip to China. There is too much to tell.  
 This is a **chronological** account of my trip in September/October 2025, with tips, advice and personal experiences mixed in between. It is literally a *brain dump* of China, as it came out.
@@ -31,7 +31,7 @@ In China:
 
 This combination means that you **have to learn an entire ecosystem of applications** to get around.
 
-![AMAP, the Chinese google map](/public/posts/amap-re.png "AMAP, the Chinese google map")
+![AMAP, the Chinese google map](/public/posts/amap-re.webp "AMAP, the Chinese google map")
 
 Surely you've heard of **WeChat**, the “Chinese WhatsApp”, which also serves to pay and is a social network. It's a *mega app*.  
 As tourists, you need **WeChat or Alipay** (Alibaba, the same as AliExpress) to pay.
@@ -49,7 +49,7 @@ But yes:
 China is **ultra safe**. With a little Creole liveliness it is almost impossible for someone to scam you on the street.  
 My post from here on out is **100% bullish** about China, its culture, its language and its people.
 
-![Tianmen Square](/public/posts/tianmen-re.png "Tianmen Square")
+![Tianmen Square](/public/posts/tianmen-re.webp "Tianmen Square")
 
 ## Travel as a process
 
@@ -69,7 +69,7 @@ China:
 * tired
 
 But that tiredness **is paid for every day**.  
-![chongqing is crazy](/public/posts/chongqing-re.png "chongqing is crazy")
+![chongqing is crazy](/public/posts/chongqing-re.webp "chongqing is crazy")
 
 ## Why China (and numbers $$$)
 
@@ -126,7 +126,7 @@ But anyway, the taxi finally arrived, which was quite a problem finding because 
 Taxi finally found → 1 hour to Dongcheng.  
 Price: **~15 USD**.
 
-![Didi from alipay](/public/posts/taxi-didi-re.png "Didi from alipay")
+![Didi from alipay](/public/posts/taxi-didi-re.webp "Didi from alipay")
 
 ## First sensations of Beijing
 
@@ -136,7 +136,7 @@ Later we would find cruder parts, but for now everything is impeccable.
 
 We arrived at the hotel; What we got was like a kind of little apartment. Although we weren't going to cook, obviously, it was very comfortable and with plenty of space. The girl at the reception had spectacular English, my rustic Chinese was not needed. It being the first day, and almost at noon, we decided to go for a walk.
 
-![Stey Hotel Beijing Wangfung](/public/posts/stey-hotel-re.png "Stey Hotel Beijing Wangfung")
+![Stey Hotel Beijing Wangfung](/public/posts/stey-hotel-re.webp "Stey Hotel Beijing Wangfung")
 
 ## Hutongs and first day
 
@@ -208,8 +208,8 @@ GEN Z LVL SUMMARY:
 Always carry **passport**.
 
 TianmenSquare x wechat:  
-![we-chat tianmen](/public/posts/reserva-tianmen-re.png)  
-![we-chat app tianmen](/public/posts/tianmen-wechat-mini-app-re.png "we-chat app tianmen")
+![we-chat tianmen](/public/posts/reserva-tianmen-re.webp)  
+![we-chat app tianmen](/public/posts/tianmen-wechat-mini-app-re.webp "we-chat app tianmen")
 
 ## Train to Shanghai
 
@@ -386,7 +386,7 @@ I recommend it, without a doubt, China and Japan are two of my favorite destinat
 
 Below is a breakdown of my tips, compiled from an analysis of my experience conducted by ChatGPT.
 
-# Real tips for traveling to China (taken from my experience)
+## Real tips for traveling to China (taken from my experience)
 
 This is not a generic guide. They are **practical tips**, tested on the street, based on what **yes or yes** happened to me traveling through China as a Western tourist in 2025.
 

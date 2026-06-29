@@ -921,7 +921,7 @@ a.tag:hover {
     line-height: 1.4;
 }
 
-.timeline-item h4 {
+.timeline-item h3 {
     grid-column: 2;
     grid-row: 1;
     font-size: var(--size-h3);
@@ -955,7 +955,7 @@ a.tag:hover {
     gap: var(--space-md);
 }
 
-.skill-category h4 {
+.skill-category h3 {
     font-family: var(--font-mono);
     font-size: var(--size-xs);
     text-transform: uppercase;

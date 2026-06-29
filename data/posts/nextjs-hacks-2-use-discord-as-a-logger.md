@@ -2,7 +2,7 @@
 title: "Next.js Hacks 2 - Use Discord as a Logger"
 publishDate: "2025-08-17"
 slug: "nextjs-hacks-2-use-discord-as-a-logger"
-excerpt: "Lately I have been complaining about paid logging services: expensive, overkill for small projects and on top of that you don't always look at them. So I thought: what if I just send everything to a D..."
+excerpt: "Send logs straight to a Discord channel instead of paying for a logging service. A simple Next.js hack for small projects and side apps."
 readingTime: 3
 tags: ["nextjs"]
 ---

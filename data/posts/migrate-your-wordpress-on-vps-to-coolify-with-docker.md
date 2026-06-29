@@ -1,8 +1,8 @@
 ---
-title: "Migrate your WordPress (on vps) to coolify with docker"
+title: "Migrate WordPress VPS to Coolify + Docker"
 publishDate: "2024-11-04"
 slug: "migrate-your-wordpress-on-vps-to-coolify-with-docker"
-excerpt: "Configurar una nueva instancia de WordPress con MariaDB Muy facil en este caso. Simplemente es hacer click en   Projects -> add -> crear el proyecto -> add resource -> wordpress with amariadb  Migrar ..."
+excerpt: "Move your WordPress site from a traditional VPS to Coolify using Docker. Step-by-step setup for MariaDB, files and DNS in Spanish."
 readingTime: 4
 tags: ["wordpress", "docker"]
 ---

@@ -2,7 +2,7 @@
 title: "Nextjs server actions in depth"
 publishDate: "2025-05-22"
 slug: "nextjs-server-actions-in-depth"
-excerpt: "Next.js Server Actions offer us a very powerful way to handle mutations and server logic directly from our React components. This makes the lines between client/server a little blurred, but does it in..."
+excerpt: "Next.js Server Actions let you run mutations and server logic from React components. A practical look at how they work and when to use them."
 readingTime: 9
 tags: ["nextjs", "react", "javascript", "nodejs", "server"]
 ---

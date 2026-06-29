@@ -1,8 +1,8 @@
 ---
-title: "Javascript Arrays"
+title: "8 JavaScript Array Methods to Know"
 publishDate: "2021-01-08"
 slug: "javascript-arrays"
-excerpt: "In this tutorial you will be able to see 8 methods applicable to arrays in Javascript that will help us work better with them.   Filter, map, some, includes, every, forEach, reduce, find  Part 1 1.Fil..."
+excerpt: "Eight practical JavaScript array methods explained with examples: filter, map, some, includes, every, forEach, reduce and find."
 readingTime: 3
 tags: ["javascript", "finance"]
 ---
@@ -10,7 +10,7 @@ tags: ["javascript", "finance"]
 In this tutorial you will be able to see 8 methods applicable to arrays in Javascript that will help us work better with them.  
 Filter, map, some, includes, every, forEach, reduce, find
 
-### Part 1
+## Part 1
 
 1.Filter
 

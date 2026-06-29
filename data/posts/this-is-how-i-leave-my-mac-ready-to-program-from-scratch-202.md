@@ -1,8 +1,8 @@
 ---
-title: "This is how I leave my Mac ready to program from scratch (2025)"
+title: "My Mac Setup for Programming from Scratch"
 publishDate: "2025-04-14"
 slug: "this-is-how-i-leave-my-mac-ready-to-program-from-scratch-202"
-excerpt: "Every time I pick up a new Mac, the same thing happens to me: I want to be ready to work in less than an hour, without wasting time with a thousand windows or strange configurations. That's why I put ..."
+excerpt: "How I prepare a new Mac for development in under an hour. The apps, settings and small tweaks I install so I can start coding immediately."
 readingTime: 4
 tags: ["docker", "sqlite"]
 ---

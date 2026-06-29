@@ -1,14 +1,14 @@
 ---
-title: "Palindrome"
+title: "Solve Palindrome in JavaScript"
 publishDate: "2024-10-24T22:00:00Z"
-excerpt: "It seems knowing the built in methods goes a long way."
+excerpt: "LeetCode problem 9 solved in one line using JavaScript built-ins. A quick look at toString, split, reverse and why knowing the basics helps."
 coverImage: "https://cloud.codigomate.com/c9ucli.jpg"
 readingTime: 2
 tags: ["leetcode", "javascript"]
 slug: "palindrome"
 ---
 
-# Palindrome
+## Palindrome
 
 So, I couldnt wait that much to do another one. Had 10 minutes to spare, and I was like, "okay, I'll do problem 9 of leet code". Essentially this was the next easy problem following the two sum.
 
@@ -28,4 +28,4 @@ This complies with the problem requirements, and all in one line.
 
 Essentially this was o(n) so good enough
 
-![palindrome](https://cloud.codigomate.com/e7fn76.png)
+![palindrome](https://cloud.codigomate.com/e7fn76.webp)

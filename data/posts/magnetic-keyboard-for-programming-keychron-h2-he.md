@@ -1,8 +1,8 @@
 ---
-title: "Magnetic keyboard for programming? Keychron H2 HE"
+title: "Keychron H2 HE Magnetic Keyboard Review"
 publishDate: "2025-12-13"
 slug: "magnetic-keyboard-for-programming-keychron-h2-he"
-excerpt: "Introduction I got curious about magnetic switches and brought the Keychron H2 HE to the table. I did a short unboxing and put it face to face with my Lofree Flow, which I have been using every day to..."
+excerpt: "I tested the Keychron H2 HE magnetic-switch keyboard against my daily Lofree Flow. A quick review of how it feels for coding and whether it is worth it."
 readingTime: 3
 tags: ["mechanicalkeyboard", "keychron", "lofreetech", "setup"]
 ---

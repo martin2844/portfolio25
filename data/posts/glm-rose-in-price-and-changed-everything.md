@@ -2,7 +2,7 @@
 title: "GLM rose in price… and changed everything"
 publishDate: "2026-04-11"
 slug: "glm-rose-in-price-and-changed-everything"
-excerpt: "Introduction A while ago GLM was my favorite “hack”: decent quality, very low cost and a couple of technical details that made it perform more than it cost. But it took a jump in price and, well, it c..."
+excerpt: "GLM used to be my favorite cheap model hack until the price jumped. Here is what changed and whether it is still worth using."
 readingTime: 3
 tags: ["z.ai", "claude", "codex", "kimi"]
 ---

@@ -1,8 +1,8 @@
 ---
-title: "I renewed my desktop and PC - This is how my aesthetic setup turned out 🎨✨ - Dev Blog"
+title: "My Aesthetic Desktop and PC Setup Refresh"
 publishDate: "2024-12-08"
 slug: "i-renewed-my-desktop-and-pc-this-is-how-my-aesthetic-setup-t"
-excerpt: "Lately I had been working on a “Frankenstein” desk that I put together with what I had. It worked, but it was a visual mess and didn't invite me to sit down and concentrate. So I took a weekend to do ..."
+excerpt: "I rebuilt my desk setup from a Frankenstein mess into a clean, aesthetic workspace. A look at the monitors, PC and small details that made the difference."
 readingTime: 3
 tags: []
 ---

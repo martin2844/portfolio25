@@ -1,8 +1,8 @@
 ---
-title: "Basic security for your self-hosted server (2026) | SSH, Firewall, Updates and Backups"
+title: "Basic Self-Hosted Server Security (2026)"
 publishDate: "2025-12-27"
 slug: "basic-security-for-your-self-hosted-server-2026-ssh-firewall"
-excerpt: "If you self-host something (a VPS, a small server at home, Docker, Coolify, Caddy, Traefik), there is a security floor that you have to cover no matter what. I have been asked a lot: “What is the mini..."
+excerpt: "A practical security floor for anyone self-hosting: SSH hardening, firewall rules, automatic updates and backups so your VPS stays safe."
 readingTime: 4
 tags: ["docker", "coolify", "server", "self-hosting"]
 ---
