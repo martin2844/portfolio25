@@ -43,119 +43,65 @@ class MarkdownParser {
     }
     
     public static function markdownToHtml($markdown) {
-        // Headers (skip first H1 to avoid duplication with page title)
-        $markdown = preg_replace('/^### (.*$)/im', '<h3>$1</h3>', $markdown);
-        $markdown = preg_replace('/^## (.*$)/im', '<h2>$1</h2>', $markdown);
-        
-        // Remove the first H1 if it matches the title, otherwise convert remaining H1s to H2s
-        $lines = explode("\n", $markdown);
-        $firstH1Found = false;
-        $processedLines = [];
-        
-        foreach ($lines as $line) {
-            if (preg_match('/^# (.*)$/', $line, $matches) && !$firstH1Found) {
-                $firstH1Found = true;
-                continue;
-            } elseif (preg_match('/^# (.*)$/', $line, $matches)) {
-                $processedLines[] = '<h2>' . $matches[1] . '</h2>';
-            } else {
-                $processedLines[] = $line;
-            }
+        // Use Parsedown for standard Markdown (lists, blockquotes, HRs, tables, etc.)
+        if (!class_exists('Parsedown')) {
+            require_once __DIR__ . '/Parsedown.php';
         }
-        
-        $markdown = implode("\n", $processedLines);
-        
-        // Code blocks with language detection
-        $markdown = preg_replace_callback('/```(\w+)?\n?(.*?)```/s', function($matches) {
-            $lang = !empty($matches[1]) ? $matches[1] : '';
-            $code = trim($matches[2]);
-            $langClass = $lang ? "language-{$lang}" : 'language-text';
-            return "<pre class=\"{$langClass}\"><code class=\"{$langClass}\">" . htmlspecialchars($code) . "</code></pre>";
-        }, $markdown);
-        
-        // Inline code
-        $markdown = preg_replace_callback('/`([^`]*)`/s', function($matches) {
-            $content = trim($matches[1]);
-            if (empty($content) || strpos($content, "\n\n") !== false) {
-                return '`' . $matches[1] . '`';
-            }
-            return '<code>' . htmlspecialchars($content) . '</code>';
-        }, $markdown);
-        
-        // Images (lazy-loaded with real dimensions when available)
-        $markdown = preg_replace_callback('/!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/', function($matches) {
-            $alt = $matches[1];
-            $src = $matches[2];
-            $title = $matches[3] ?? '';
+        $parsedown = new Parsedown();
+        $parsedown->setMarkupEscaped(false);
+        $parsedown->setBreaksEnabled(false);
+        $html = $parsedown->text($markdown);
 
-            $attrs = 'src="' . e($src) . '" alt="' . e($alt) . '"';
-            if ($title !== '') {
-                $attrs .= ' title="' . e($title) . '"';
+        // Remove the first H1 so it does not duplicate the page title
+        $html = preg_replace('/<h1[^>]*>.*?<\/h1>/s', '', $html, 1);
+
+        // Ensure <pre> carries the same language class as its <code> child for Prism styling
+        $html = preg_replace_callback('/<pre><code(?:\s+class="([^"]*)")?>/', function($matches) {
+            $class = isset($matches[1]) ? $matches[1] : '';
+            return $class ? "<pre class=\"{$class}\"><code class=\"{$class}\">" : '<pre><code>';
+        }, $html);
+
+        // Post-process images: add real dimensions and lazy loading
+        $html = preg_replace_callback('/<img([^>]*)>/i', function($matches) {
+            $attrsStr = $matches[1];
+
+            // Parse existing attributes
+            $attrs = [];
+            preg_match_all('/(\w+)="([^"]*)"/', $attrsStr, $attrMatches, PREG_SET_ORDER);
+            foreach ($attrMatches as $am) {
+                $attrs[$am[1]] = $am[2];
             }
 
-            $localPath = '';
-            if (strpos($src, '/') === 0) {
+            $src = $attrs['src'] ?? '';
+            if ($src && strpos($src, '/') === 0) {
                 $localPath = __DIR__ . '/..' . $src;
+                if (file_exists($localPath)) {
+                    $size = @getimagesize($localPath);
+                    if ($size) {
+                        $attrs['width'] = (string) $size[0];
+                        $attrs['height'] = (string) $size[1];
+                    }
+                }
             }
-            if ($localPath && file_exists($localPath)) {
-                $size = @getimagesize($localPath);
-                if ($size) {
-                    $attrs .= ' width="' . (int)$size[0] . '" height="' . (int)$size[1] . '"';
+            $attrs['loading'] = 'lazy';
+
+            // Preserve original attribute order roughly while adding new ones
+            $attrOut = '';
+            foreach (['src', 'alt', 'title', 'width', 'height', 'loading'] as $key) {
+                if (isset($attrs[$key])) {
+                    $attrOut .= ' ' . $key . '="' . e($attrs[$key]) . '"';
+                }
+            }
+            // Add any other original attributes we did not explicitly handle
+            foreach ($attrs as $key => $value) {
+                if (!in_array($key, ['src', 'alt', 'title', 'width', 'height', 'loading'])) {
+                    $attrOut .= ' ' . $key . '="' . e($value) . '"';
                 }
             }
 
-            $attrs .= ' loading="lazy"';
-            return '<img ' . $attrs . '>';
-        }, $markdown);
+            return '<img' . $attrOut . '>';
+        }, $html);
 
-        // Autolinks: [text](<url>) and <https://example.com>
-        $markdown = preg_replace('/\[([^\]]+)\]\(<([^>]+)>\)/', '<a href="$2">$1</a>', $markdown);
-        $markdown = preg_replace('/<((https?:\/\/|mailto:)[^>]+)>/i', '<a href="$1">$1</a>', $markdown);
-
-        // Links
-        $markdown = preg_replace('/\[([^\]]+)\]\(([^)]+)\)/', '<a href="$2">$1</a>', $markdown);
-
-        // Bold
-        $markdown = preg_replace('/\*\*(.*?)\*\*/', '<strong>$1</strong>', $markdown);
-        
-        // Paragraphs and lists
-        $lines = explode("\n", $markdown);
-        $html = '';
-        $in_list = false;
-        
-        foreach ($lines as $line) {
-            $line = trim($line);
-            if (empty($line)) {
-                if ($in_list) {
-                    $html .= "</ul>\n";
-                    $in_list = false;
-                }
-                continue;
-            }
-            
-            if (preg_match('/^- (.+)/', $line, $matches)) {
-                if (!$in_list) {
-                    $html .= "<ul>\n";
-                    $in_list = true;
-                }
-                $html .= "<li>{$matches[1]}</li>\n";
-            } else {
-                if ($in_list) {
-                    $html .= "</ul>\n";
-                    $in_list = false;
-                }
-                if (!preg_match('/^<(h[1-6]|pre|img)/', $line)) {
-                    $html .= "<p>$line</p>\n";
-                } else {
-                    $html .= "$line\n";
-                }
-            }
-        }
-        
-        if ($in_list) {
-            $html .= "</ul>\n";
-        }
-        
         return $html;
     }
 }

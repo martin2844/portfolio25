@@ -68,7 +68,7 @@ PubkeyAuthentication yes
 
 # Optional:
 
-#Port 2222
+# Port 2222
 
 ```
 - Restart SSH:

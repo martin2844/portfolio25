@@ -14,7 +14,7 @@ Lately I have been hearing a lot “without Vercel you can't deploy Next.js”. 
 
 ---
 
-##Why Coolify?
+## Why Coolify?
 
 * It is open-source and is installed in a single line.
 * Gives you web panel, logs, domains with automatic SSL, deploy from GitHub/GitLab, environment variables and services like Postgres/Redis with one click.
@@ -57,7 +57,7 @@ Official docs: <https://coolify.io/docs/installation>
 
    * Point an A record of your domain to the VPS IP.
    * In Coolify you set the domain of the app and activate “Auto SSL”. It issues the Let's Encrypt to you alone.
-7.Deploy
+7. Deploy
 
    * Save changes and Deploy. Each push to the branch you choose triggers a new deployment.
 
@@ -81,10 +81,6 @@ Everything the same. You change the builder and the commands, and move forward. 
   + Ideal for prototypes, quick landings or when your team is already married to their flow.
 
 There is no single answer. The good thing is that you can choose, and migrate whenever you want.
-
----
-
-## Full video
 
 ---
 

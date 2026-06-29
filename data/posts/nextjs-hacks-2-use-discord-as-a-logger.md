@@ -128,7 +128,7 @@ Recommended variables:
 
 ---
 
-##Video
+## Video
 
 ---
 

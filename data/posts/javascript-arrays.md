@@ -12,7 +12,7 @@ Filter, map, some, includes, every, forEach, reduce, find
 
 ## Part 1
 
-1.Filter
+1. Filter
 
 ```
 const members = [
@@ -44,7 +44,7 @@ __proto__: Array(0)
 
 ---
 
-2.Map
+2. Map
 
 Map will create a new array with the result of the function for each element of the array.  
 It works in the previous example, if we want an array with only the ages
@@ -164,7 +164,7 @@ this is a for each Loop 7
 
 ---
 
-8.Find
+8. Find
 
 ```
 var array1 = [6, 14, 28, 4, 34];

@@ -76,7 +76,7 @@ With that I already have includes, basic routing and zero dependencies. If tomor
 
 Isn't it convenient? When your app does need all that (and more), or your team is already built on the React/Next ecosystem and provides real value.
 
-##Video
+## Video
 
 ## Closing
 

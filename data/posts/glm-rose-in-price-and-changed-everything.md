@@ -17,7 +17,7 @@ A while ago GLM was my favorite “hack”: decent quality, very low cost and a 
 * The value of the “hack” was the gap: paying little for something that performed like a more expensive model. If that gap disappears, you're left with pure complexity without the benefit.
 * If you already have it integrated and it works stable, ok, you can continue. But for new projects, today it doesn't seem like the smartest move.
 
-##When does it still make sense?
+## When does it still make sense?
 
 * You have an integration going and changing involves a lot of refactoring.
 * Your use case matches their strengths perfectly and you don't get hit by the new cost.

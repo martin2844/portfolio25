@@ -227,7 +227,7 @@ GEN Z SUMMARY:
 
 ![Station Row](/public/posts/estacion-re.jpg "Station Row")
 
-##Shanghai
+## Shanghai
 
 Shanghai is the perfect contrast to Beijing. The skyscrapers that you don't see in the tourist area of ​​Beijing you see in Shanghai. The city has a unique skyline, which is also illuminated in a coordinated way at night.
 
@@ -298,7 +298,7 @@ Viral city, and rightly so:
 * cyberpunk lights
 * spicy food
 
-##Guangzhou
+## Guangzhou
 
 The next destination was Guangzhou, and I don't have much to say about the city since we didn't do much. We arrived at night and were caught in tremendous traffic. That same night we walked along a very rustic and native pedestrian street, behind our hotel, and the next day the idea was to go buy imitations of handbags at Leather City, a shopping center full of vendors who have imitations of the most famous handbags (handbags, in Spain): Prada, Gucci, Hermès, LV, etc.
 

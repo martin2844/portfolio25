@@ -86,10 +86,6 @@ If you program, Raycast shaves seconds off each action. That, added together, is
 
 ---
 
-## Watch the video
-
----
-
 ## Closing
 
 These five are fixed on all my Macs. Some add neatness, others control, and one redefines your flow with the keyboard. If you have another app that changed your life on macOS, throw it in the comments. I'm always trying new things as I build and row projects. See you next time, with another mate next to you.

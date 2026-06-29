@@ -49,10 +49,6 @@ For personal projects, pages, bots and home-made services (wikis, dashboards, et
 * Automatic and external backups (another machine, another disk, whatever you have).
 * Basic monitoring: even ping and resource usage to find out if something goes down.
 
-## Watch the video
-
-Here I show you step by step and how everything turned out:
-
 ## Closing
 
 I loved what came out with a €97 computer. If self-hosting appeals to you and you want to have your projects at home, this is a nice gateway. And if you want to see the complete system with Cloudflare, dynamic IP and all the details, watch the long video on the channel. As always, if you have any questions or ideas, I'll read you in the comments. Keep building with code and mate!

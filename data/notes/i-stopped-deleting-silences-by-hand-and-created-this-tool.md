@@ -29,7 +29,7 @@ I published it as CleanCut so anyone can try it:
 
 There is no weird magic: ffmpeg is the tank that does the heavy lifting; The app is the pilot that tells you what to cut and how.
 
-##How do I use it in my flow
+## How do I use it in my flow
 
 * I record a long take, without worrying so much about silences.
 * I run the file through CleanCut with a quiet preset (silence threshold + padding).
@@ -42,7 +42,7 @@ There is no weird magic: ffmpeg is the tank that does the heavy lifting; The app
 * Fewer clicks = more focus: automating 80% of the editing gives you creative energy back.
 * ffmpeg is a beast: if you tame it, you will save hours and servers.
 
-##Video
+## Video
 
 ## Closing
 

@@ -65,7 +65,7 @@ In this video I went deep into n8n in “level 2” mode: e-commerce scraping, c
 
 You import the JSON into n8n and you can play with your own keywords, page limits and filters.
 
-##Video
+## Video
 
 ## Closing
 

@@ -26,7 +26,7 @@ I came across ChatGPT Atlas, an “AI browser” that promises to change how we 
 * If you like autarky, you can build something with a local LLM (like LM Studio + browser plugin) and you have control over your data.
 * Simple flows: keyboard shortcuts, snippets and a couple of bookmarks with well thought out prompts. Less glamour, more speed.
 
-##Video
+## Video
 
 ## Closing
 

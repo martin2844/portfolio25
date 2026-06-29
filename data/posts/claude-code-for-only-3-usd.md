@@ -65,10 +65,6 @@ Tip: if you are going to use it heavily for large projects, measure consumption 
 * If you work as a team, each one with their key.
 * Keep an eye on the z.ai dashboard in case the limits or available models change.
 
-## Watch the video with the entire setup
-
-Here I show you the complete step by step, live and without laps:
-
 ## Closing
 
 I love it when a simple way to pay less for the same tool appears. If you were wanting to try Claude Code without spending 20 dollars a month, this is the move. Tell me in the comments if it worked for you, which model you chose and if you want me to make another video comparing performance between options. Now, to rub shoulders with a mate at your side and your wallet a little happier.

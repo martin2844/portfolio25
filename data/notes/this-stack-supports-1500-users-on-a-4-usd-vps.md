@@ -34,7 +34,7 @@ Repo to clone and play: <https://github.com/martin2844/knext>
 
 In my experience, for small SaaS, MVPs, internal tools or indie products, this combo breaks it. You have fewer parts, less invoice and more control.
 
-##Video
+## Video
 
 ## Closing
 

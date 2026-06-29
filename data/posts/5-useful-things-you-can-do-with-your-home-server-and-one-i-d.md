@@ -63,7 +63,7 @@ You can... but I wouldn't do it for something critical:
 * Uptime and constant maintenance, and when something fails you find out because “I didn't get the email.”  
   It is great to learn in a controlled environment; For real use, better an email provider and that's it.
 
-##Video
+## Video
 
 ## Closing
 

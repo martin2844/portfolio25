@@ -75,7 +75,7 @@ If you want to see how I put together this stack very quickly, watch this other 
 
 * [Watch on YouTube (spanish)](<https://youtu.be/PCOdoHA0CIg>)
 
-##Video
+## Video
 
 ## Closing
 

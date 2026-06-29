@@ -99,7 +99,7 @@ With that, you now have HTTPS, automatic redirects to 443 and your app secure to
 
 ---
 
-##Video
+## Video
 
 ---
 

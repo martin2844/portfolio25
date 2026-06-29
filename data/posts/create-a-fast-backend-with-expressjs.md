@@ -155,7 +155,7 @@ module.exports = {
 
 Error handling. It's a big topic: error middlewares, categories, HTTP codes, logging, and consistent responses. We see it in depth in the next part of the minicourse.
 
-##Video
+## Video
 
 Below I leave you the full episode so you can see it step by step.
 
